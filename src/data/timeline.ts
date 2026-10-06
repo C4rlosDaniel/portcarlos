@@ -81,7 +81,8 @@ export const experience: TimelineItem[] = [
     period: 'Set/2025 – Set/2026',
     role: { 'pt-BR': 'Técnico de Campo de T.I (Freelancer)', en: 'Field IT Technician (Freelancer)', fr: 'Technicien IT de Terrain (Freelance)' },
     organization: 'Vexus I.T',
-    location: 'São Paulo TODO(carlos): informar se presencial/remoto',
+    location: 'São Paulo',
+    mode: 'onSite',
     bullets: [
       {
         'pt-BR': 'Atendimento técnico presencial a empresas parceiras: diagnóstico e resolução de incidentes de hardware, software e redes.',
@@ -99,7 +100,8 @@ export const experience: TimelineItem[] = [
     period: 'Mar/2025 – Fev/2026',
     role: { 'pt-BR': 'Estagiário de Suporte Bilíngue (Inglês e Francês)', en: 'Bilingual Support Intern (English and French)', fr: 'Stagiaire en Support Bilingue (anglais et français)' },
     organization: 'Teleperformance',
-    location: 'São Paulo TODO(carlos): informar se remoto',
+    location: 'São Paulo',
+    mode: 'remote',
     bullets: [
       {
         'pt-BR': 'Suporte técnico bilíngue a usuários internos: incidentes de hardware, software e conectividade.',
@@ -162,9 +164,9 @@ export const formation: TimelineItem[] = [
   {
     period: 'Jul/2023 – Dez/2024',
     role: {
-      'pt-BR': 'Técnico em Eletrônica. TODO(carlos): o LinkedIn diz "Tecnologia em Engenharia Elétrica e Eletrônica"; confirmar o nome oficial do curso',
-      en: 'Electronics Technician. TODO(carlos): LinkedIn says "Technology in Electrical and Electronic Engineering"; confirm the official course name',
-      fr: 'Technicien en électronique. TODO(carlos): LinkedIn indique « technologie en génie électrique et électronique » ; confirmer le nom officiel du cours',
+      'pt-BR': 'Técnico em Eletrônica',
+      en: 'Electronics Technician',
+      fr: 'Technicien en électronique',
     },
     organization: 'ETEC',
     location: 'Pirassununga — SP',
