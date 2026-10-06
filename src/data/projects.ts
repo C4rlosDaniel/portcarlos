@@ -1,5 +1,4 @@
 import type { Localized } from '../i18n'
-import { TODO } from './profile'
 
 export type Category = 'sistemas' | 'landing' | 'automacao'
 export type Access = 'public' | 'login'
@@ -55,7 +54,6 @@ const projects: Project[] = [
       'Supabase',
       'JavaScript',
       'IA no desenvolvimento',
-      TODO('confirmar front-end'),
     ],
     problem: {
       'pt-BR': 'Os conteúdos exibidos nas TVs e monitores do clube eram atualizados manualmente, tela por tela.',
@@ -79,9 +77,7 @@ const projects: Project[] = [
         en: 'Real-time sync between panel and terminals',
         fr: 'Synchronisation en temps réel entre le tableau de bord et les terminaux',
       },
-      p(TODO('adicionar 1–2 decisões técnicas reais')),
     ],
-    result: p(TODO('número real (ex.: quantas telas, quanto tempo de atualização foi economizado)')),
     cover: '/projects/clubeon/cover.webp',
     gallery: [{ src: '/projects/clubeon/gallery-1.webp', thumb: '/projects/clubeon/gallery-1-thumb.webp', caption: p('ClubeON') }],
   },
@@ -101,7 +97,7 @@ const projects: Project[] = [
     role: { 'pt-BR': 'Desenvolvimento e implantação', en: 'Development and rollout', fr: 'Développement et mise en place' },
     period: '2026',
     liveUrl: 'https://clubstrategy.clubepirassununga.com.br',
-    stack: ['PostgreSQL', 'Supabase', 'JavaScript', TODO('confirmar')],
+    stack: ['PostgreSQL', 'Supabase', 'JavaScript'],
     problem: {
       'pt-BR': 'Controle de alunos matriculados, lista de espera e turmas lotadas sem uma visão única.',
       en: 'Tracking enrolled students, waiting lists and full classes without a single view.',
@@ -112,7 +108,6 @@ const projects: Project[] = [
       en: 'Dashboard with enrolled students, waiting list, full classes and a summary by activity.',
       fr: 'Tableau de bord avec élèves inscrits, liste d\'attente, classes pleines et résumé par activité.',
     },
-    result: p(TODO('resultado real')),
     cover: '/projects/clubstrategy/cover.webp',
     gallery: [{ src: '/projects/clubstrategy/gallery-1.webp', thumb: '/projects/clubstrategy/gallery-1-thumb.webp', caption: p('ClubStrategy') }],
   },
@@ -133,7 +128,7 @@ const projects: Project[] = [
     period: '2026',
     liveUrl: 'https://clubingo.vercel.app',
     access: 'public',
-    stack: ['Vercel', 'PWA', 'Supabase (realtime)', TODO('confirmar')],
+    stack: ['Vercel', 'PWA', 'Supabase (realtime)'],
     problem: {
       'pt-BR': 'A conferência das cartelas era manual e lenta durante o evento.',
       en: 'Checking the cards was manual and slow during the event.',
@@ -145,7 +140,6 @@ const projects: Project[] = [
       en: 'A bingo system with real-time sync between the drawer and the checkers, installable on mobile (PWA).',
       fr: 'Système de bingo avec synchronisation en temps réel entre le tirage et les contrôleurs, installable sur mobile (PWA).',
     },
-    result: p(TODO('ex.: eventos em que foi usado, nº de participantes')),
     cover: '/projects/clubingo/cover.webp',
     gallery: [{ src: '/projects/clubingo/gallery-1.webp', thumb: '/projects/clubingo/gallery-1-thumb.webp', caption: p('Clubingo') }],
   },
@@ -166,7 +160,7 @@ const projects: Project[] = [
     period: '2026',
     liveUrl: 'https://myfly.vercel.app',
     access: 'public',
-    stack: [TODO('confirmar'), 'Vercel'],
+    stack: ['Vercel'],
     problem: {
       'pt-BR':
         'A empresa precisava apresentar suas soluções (Food Service, FlyERP e unificação de vendas, financeiro, contratos e notas fiscais) e captar contatos.',
@@ -179,7 +173,6 @@ const projects: Project[] = [
       en: 'Responsive landing page focused on WhatsApp conversion, local SEO (Pirassununga/SP) and a dark visual identity.',
       fr: 'Landing page responsive axée sur la conversion vers WhatsApp, le SEO local (Pirassununga/SP) et une identité visuelle sombre.',
     },
-    result: p(TODO('resultado real')),
     cover: '/projects/myfly/cover.webp',
     gallery: [{ src: '/projects/myfly/gallery-1.webp', thumb: '/projects/myfly/gallery-1-thumb.webp', caption: p('My Fly') }],
   },

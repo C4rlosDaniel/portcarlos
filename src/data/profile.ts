@@ -188,5 +188,3 @@ export const profile = {
     },
   ],
 } as const
-
-export const TODO = (label: string): string => `TODO(carlos): ${label}`

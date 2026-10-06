@@ -6,9 +6,6 @@ import type { Project } from '../data/projects'
 import { l } from '../i18n'
 import Gallery from './Gallery'
 
-const isTodo = (value: string) => value.startsWith('TODO(carlos)')
-const dev = import.meta.env.DEV
-
 function useFocusTrap(active: boolean, ref: RefObject<HTMLDivElement | null>) {
   useEffect(() => {
     if (!active) return
@@ -62,9 +59,7 @@ export default function ProjectPanel({ project, onClose, onNavigate }: Props) {
   if (project.problem) blocks.push({ title: t('projects.problem'), body: l(project.problem) })
   if (project.solution) blocks.push({ title: t('projects.solution'), body: l(project.solution) })
   if (project.decisions && project.decisions.length > 0) {
-    const list = project.decisions
-      .map((item) => l(item))
-      .filter((item) => (dev ? true : !isTodo(item)))
+    const list = project.decisions.map((item) => l(item))
     if (list.length > 0) {
       blocks.push({
         title: t('projects.decisions'),
@@ -78,7 +73,7 @@ export default function ProjectPanel({ project, onClose, onNavigate }: Props) {
       })
     }
   }
-  if (project.result && (dev || !isTodo(l(project.result)))) {
+  if (project.result) {
     blocks.push({ title: t('projects.result'), body: l(project.result) })
   }
 
@@ -123,9 +118,7 @@ export default function ProjectPanel({ project, onClose, onNavigate }: Props) {
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
-          {project.stack
-            .filter((tech) => (dev ? true : !isTodo(tech)))
-            .map((tech) => (
+          {project.stack.map((tech) => (
               <span key={tech} className="rounded-full bg-surface-2 px-3 py-1 text-xs text-text/90">
                 {tech}
               </span>
