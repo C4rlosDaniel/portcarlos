@@ -1,0 +1,97 @@
+{
+  "skipLink": "Skip to content",
+  "nav": {
+    "home": "home",
+    "about": "about",
+    "skills": "skills",
+    "projects": "projects",
+    "trajectory": "journey",
+    "contact": "contact",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "footer": {
+    "credit": "Lovingly made by Carlos Daniel",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "seeProjects": "See projects",
+    "downloadCv": "Download CV",
+    "learnMore": "learn more →",
+    "scenePrevious": "Previous scene",
+    "sceneNext": "Next scene",
+    "sceneLabel": "Portfolio scenes"
+  },
+  "about": {
+    "title": "Core info",
+    "outsideTitle": "Outside the computer",
+    "photoAlt": "Photo of Carlos Daniel",
+    "photoFallback": "CD"
+  },
+  "projects": {
+    "filterAll": "All",
+    "filterSistemas": "Systems",
+    "filterLanding": "Landing pages",
+    "filterAutomacao": "Automation",
+    "viewProject": "view project",
+    "accessRestricted": "Restricted access (login)",
+    "problem": "Problem",
+    "solution": "Solution",
+    "decisions": "Technical decisions",
+    "result": "Outcome",
+    "prevProject": "← previous project",
+    "nextProject": "next project →",
+    "openSource": "Open source",
+    "galleryPrevious": "Previous image",
+    "galleryNext": "Next image",
+    "lightboxClose": "Close preview",
+    "role": "Role",
+    "period": "Period"
+  },
+  "skills": {
+    "inProduction": "In production",
+    "studying": "Learning",
+    "usedIn": "Used in",
+    "back": "← back to the system",
+    "sun": "Sun — skills solar system · Carlos"
+  },
+  "trajectory": {
+    "experience": "Experience",
+    "formation": "Education",
+    "certifications": "Certifications",
+    "remote": "Remote",
+    "onSite": "On site",
+    "today": "current",
+    "period": "Period"
+  },
+  "contact": {
+    "title": "Postcard",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "nameRequired": "Enter your name (max 80 characters)",
+    "emailInvalid": "Enter a valid email address",
+    "messageRequired": "Write your message (max 1000 characters)",
+    "messageCounter": "{{count}}/1000",
+    "requiredNote": "* required fields",
+    "send": "Send",
+    "sending": "Sending...",
+    "sendAnother": "Send another",
+    "successTitle": "Postcard sent!",
+    "successText": "I'll reply as soon as I can.",
+    "error": "Oops! Something went wrong. Try again or reach me on LinkedIn.",
+    "rateLimited": "You've already sent a postcard recently. Try again in 30 seconds.",
+    "honeypot": "Leave this field blank",
+    "mailtoFallback": "Send by email",
+    "cvDownload": "Download CV",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "submitting": "Sending postcard..."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "Oops! This page doesn't exist. Use the menu or head back home.",
+    "home": "Back to home"
+  }
+}

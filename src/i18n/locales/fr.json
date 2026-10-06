@@ -1,0 +1,97 @@
+{
+  "skipLink": "Aller au contenu",
+  "nav": {
+    "home": "accueil",
+    "about": "à propos",
+    "skills": "compétences",
+    "projects": "projets",
+    "trajectory": "parcours",
+    "contact": "contact",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu"
+  },
+  "footer": {
+    "credit": "Fait avec soin par Carlos Daniel",
+    "rights": "Tous droits réservés."
+  },
+  "home": {
+    "seeProjects": "Voir les projets",
+    "downloadCv": "Télécharger le CV",
+    "learnMore": "en savoir plus →",
+    "scenePrevious": "Scène précédente",
+    "sceneNext": "Scène suivante",
+    "sceneLabel": "Scènes du portfolio"
+  },
+  "about": {
+    "title": "Info essentielle",
+    "outsideTitle": "Hors de l'ordinateur",
+    "photoAlt": "Photo de Carlos Daniel",
+    "photoFallback": "CD"
+  },
+  "projects": {
+    "filterAll": "Tous",
+    "filterSistemas": "Systèmes",
+    "filterLanding": "Landing pages",
+    "filterAutomacao": "Automatisation",
+    "viewProject": "voir le projet",
+    "accessRestricted": "Accès restreint (connexion)",
+    "problem": "Problème",
+    "solution": "Solution",
+    "decisions": "Décisions techniques",
+    "result": "Résultat",
+    "prevProject": "← projet précédent",
+    "nextProject": "projet suivant →",
+    "openSource": "Open source",
+    "galleryPrevious": "Image précédente",
+    "galleryNext": "Image suivante",
+    "lightboxClose": "Fermer l'aperçu",
+    "role": "Rôle",
+    "period": "Période"
+  },
+  "skills": {
+    "inProduction": "En production",
+    "studying": "En apprentissage",
+    "usedIn": "Utilisé dans",
+    "back": "← retour au système",
+    "sun": "Soleil — système solaire de compétences · Carlos"
+  },
+  "trajectory": {
+    "experience": "Expérience",
+    "formation": "Formation",
+    "certifications": "Certifications",
+    "remote": "À distance",
+    "onSite": "Sur site",
+    "today": "en cours",
+    "period": "Période"
+  },
+  "contact": {
+    "title": "Carte postale",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "nameRequired": "Veuillez indiquer votre nom (max 80 caractères)",
+    "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+    "messageRequired": "Écrivez votre message (max 1000 caractères)",
+    "messageCounter": "{{count}}/1000",
+    "requiredNote": "* champs obligatoires",
+    "send": "Envoyer",
+    "sending": "Envoi...",
+    "sendAnother": "Envoyer une autre",
+    "successTitle": "Carte postale envoyée !",
+    "successText": "Je répondrai dès que possible.",
+    "error": "Oups ! Un problème est survenu. Réessayez ou écrivez-moi sur LinkedIn.",
+    "rateLimited": "Vous avez déjà envoyé une carte récemment. Réessayez dans 30 secondes.",
+    "honeypot": "Laissez ce champ vide",
+    "mailtoFallback": "Envoyer par e-mail",
+    "cvDownload": "Télécharger le CV",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "submitting": "Envoi de la carte postale..."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Oups ! Cette page n'existe pas. Utilisez le menu ou revenez à l'accueil.",
+    "home": "Retour à l'accueil"
+  }
+}

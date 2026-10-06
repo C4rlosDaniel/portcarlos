@@ -1,0 +1,97 @@
+{
+  "skipLink": "Pular para o conteúdo",
+  "nav": {
+    "home": "início",
+    "about": "sobre",
+    "skills": "skills",
+    "projects": "projetos",
+    "trajectory": "trajetória",
+    "contact": "contato",
+    "menuOpen": "Abrir menu",
+    "menuClose": "Fechar menu"
+  },
+  "footer": {
+    "credit": "Feito com carinho por Carlos Daniel",
+    "rights": "Todos os direitos reservados."
+  },
+  "home": {
+    "seeProjects": "Ver projetos",
+    "downloadCv": "Baixar CV",
+    "learnMore": "saiba mais →",
+    "scenePrevious": "Cena anterior",
+    "sceneNext": "Próxima cena",
+    "sceneLabel": "Cenas do portfólio"
+  },
+  "about": {
+    "title": "Informações essenciais",
+    "outsideTitle": "Fora do computador",
+    "photoAlt": "Foto de Carlos Daniel",
+    "photoFallback": "CD"
+  },
+  "projects": {
+    "filterAll": "Todos",
+    "filterSistemas": "Sistemas",
+    "filterLanding": "Landing pages",
+    "filterAutomacao": "Automação",
+    "viewProject": "ver projeto",
+    "accessRestricted": "Acesso restrito (login)",
+    "problem": "Problema",
+    "solution": "Solução",
+    "decisions": "Decisões técnicas",
+    "result": "Resultado",
+    "prevProject": "← projeto anterior",
+    "nextProject": "próximo projeto →",
+    "openSource": "Código aberto",
+    "galleryPrevious": "Imagem anterior",
+    "galleryNext": "Próxima imagem",
+    "lightboxClose": "Fechar visualização",
+    "role": "Papel",
+    "period": "Período"
+  },
+  "skills": {
+    "inProduction": "Em produção",
+    "studying": "Estudando",
+    "usedIn": "Usado em",
+    "back": "← voltar ao sistema",
+    "sun": "Sol — sistema solar de habilidades · Carlos"
+  },
+  "trajectory": {
+    "experience": "Experiência",
+    "formation": "Formação",
+    "certifications": "Certificações",
+    "remote": "Remoto",
+    "onSite": "Presencial",
+    "today": "atual",
+    "period": "Período"
+  },
+  "contact": {
+    "title": "Cartão postal",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "nameRequired": "Informe seu nome (máx. 80 caracteres)",
+    "emailInvalid": "Informe um e-mail válido",
+    "messageRequired": "Escreva sua mensagem (máx. 1000 caracteres)",
+    "messageCounter": "{{count}}/1000",
+    "requiredNote": "* campos obrigatórios",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "sendAnother": "Enviar outro",
+    "successTitle": "Cartão postal enviado!",
+    "successText": "Respondo assim que possível.",
+    "error": "Opa! Houve um problema, tente novamente ou fale comigo pelo LinkedIn.",
+    "rateLimited": "Você já enviou um cartão recentemente. Tente novamente em 30 segundos.",
+    "honeypot": "Deixe este campo em branco",
+    "mailtoFallback": "Enviar por e-mail",
+    "cvDownload": "Baixar CV",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "submitting": "Enviando cartão postal..."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "text": "Opa! Essa página não existe. Use o menu ou volte para o início.",
+    "home": "Voltar ao início"
+  }
+}
