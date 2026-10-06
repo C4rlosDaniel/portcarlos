@@ -48,7 +48,6 @@ const projects: Project[] = [
     role: { 'pt-BR': 'Desenvolvimento e implantação', en: 'Development and rollout', fr: 'Développement et mise en place' },
     period: '2026',
     liveUrl: 'https://clubeon.clubepirassununga.com.br',
-    access: 'login',
     stack: [
       'PostgreSQL',
       'Supabase',
@@ -196,7 +195,7 @@ const projects: Project[] = [
     period: '2026',
     liveUrl: 'https://myfly.vercel.app',
     access: 'public',
-    stack: ['Vercel'],
+    stack: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'lucide-react', 'SEO local', 'Vercel'],
     problem: {
       'pt-BR':
         'A empresa precisava apresentar suas soluções (Food Service, FlyERP e unificação de vendas, financeiro, contratos e notas fiscais) e captar contatos.',
@@ -209,6 +208,28 @@ const projects: Project[] = [
       en: 'Responsive landing page focused on WhatsApp conversion, local SEO (Pirassununga/SP) and a dark visual identity.',
       fr: 'Landing page responsive axée sur la conversion vers WhatsApp, le SEO local (Pirassununga/SP) et une identité visuelle sombre.',
     },
+    decisions: [
+      {
+        'pt-BR': 'React + Vite para páginas rápidas e build estático publicado na Vercel',
+        en: 'React + Vite for fast pages and a static build published on Vercel',
+        fr: 'React + Vite pour des pages rapides et un build statique publié sur Vercel',
+      },
+      {
+        'pt-BR': 'Tailwind CSS para aplicar a identidade visual escura de forma consistente',
+        en: 'Tailwind CSS to apply the dark visual identity consistently',
+        fr: 'Tailwind CSS pour appliquer l\'identité visuelle sombre de manière cohérente',
+      },
+      {
+        'pt-BR': 'Framer Motion nas animações de entrada e lucide-react nos ícones',
+        en: 'Framer Motion for entrance animations and lucide-react for icons',
+        fr: 'Framer Motion pour les animations d\'entrée et lucide-react pour les icônes',
+      },
+      {
+        'pt-BR': 'SEO local (Pirassununga/SP): meta tags, Open Graph e conversão direta para o WhatsApp',
+        en: 'Local SEO (Pirassununga/SP): meta tags, Open Graph and direct WhatsApp conversion',
+        fr: 'SEO local (Pirassununga/SP) : meta tags, Open Graph et conversion directe vers WhatsApp',
+      },
+    ],
     cover: '/projects/myfly/cover.webp',
     gallery: [{ src: '/projects/myfly/gallery-1.webp', thumb: '/projects/myfly/gallery-1-thumb.webp', caption: p('My Fly') }],
   },
