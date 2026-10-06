@@ -1,13 +1,34 @@
+import { Link } from 'react-router-dom'
+import { ArrowDown } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import SceneCarousel from '../components/SceneCarousel'
+import { profile } from '../data/profile'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
 export default function Home() {
   const { t } = useTranslation()
   useDocumentTitle('Carlos Daniel Alencar — Analista de Sistemas & Automação')
+
   return (
-    <section className="mx-auto max-w-[var(--maxw)] px-[var(--gutter)] py-16">
-      <h1 className="text-5xl font-bold">WIP: Home</h1>
-      <p>{t('home.seeProjects')}</p>
+    <section className="mx-auto max-w-[var(--maxw)] px-[var(--gutter)] py-10">
+      <SceneCarousel scenes={profile.scenes} />
+
+      <div className="mt-4 flex flex-wrap items-center gap-4 border-t border-border pt-8">
+        <Link
+          to="/projetos"
+          className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent/80"
+        >
+          {t('home.seeProjects')}
+        </Link>
+        <a
+          href="/cv/Carlos-Daniel-Alencar-CV.pdf"
+          download
+          className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm text-text transition-colors hover:border-accent-2"
+        >
+          <ArrowDown className="h-4 w-4" aria-hidden="true" />
+          {t('home.downloadCv')}
+        </a>
+      </div>
     </section>
   )
 }

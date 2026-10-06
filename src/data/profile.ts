@@ -1,5 +1,13 @@
 import type { Localized } from '../i18n'
 
+export type Scene = {
+  id: string
+  kicker: Localized
+  title: Localized
+  blurb: Localized
+  to: string
+}
+
 export const profile = {
   name: 'Carlos Daniel da Silva Alencar',
   shortName: 'Carlos Daniel',
