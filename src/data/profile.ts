@@ -154,9 +154,9 @@ export const profile = {
       title: { 'pt-BR': 'Como eu trabalho', en: 'How I work', fr: 'Comment je travaille' } as Localized,
       text: {
         'pt-BR':
-          'Parto do problema real da operação: observo o processo manual, modelo os dados (PostgreSQL/Supabase), entrego algo simples que funciona e melhoro com o feedback de quem usa.',
-        en: 'I start from the real problem in the operation: I observe the manual process, model the data (PostgreSQL/Supabase), ship something simple that works and improve it with user feedback.',
-        fr: 'Je pars du problème réel de l\'opération : j\'observe le processus manuel, je modélise les données (PostgreSQL/Supabase), je livre quelque chose de simple qui fonctionne et j\'améliore avec le retour des utilisateurs.',
+          'Parto do problema real da operação: observo o processo manual, modelo os dados e entrego algo simples que funciona. Nos sistemas que implantei no Clube Pirassununga e na My Fly usei Supabase (PostgreSQL + Realtime), JavaScript, Vercel e PWA — do painel que sincroniza TVs em tempo real ao sorteador de bingo que roda no celular. Melhoro de olho no feedback de quem usa e automatizo o que sobra com webhooks, APIs e n8n.',
+        en: 'I start from the real problem in the operation: I observe the manual process, model the data and ship something simple that works. In the systems I deployed at Clube Pirassununga and My Fly I used Supabase (PostgreSQL + Realtime), JavaScript, Vercel and PWA — from the panel that syncs TVs in real time to the bingo drawer that runs on mobile. I improve everything with user feedback and automate what is left with webhooks, APIs and n8n.',
+        fr: 'Je pars du problème réel de l\'opération : j\'observe le processus manuel, je modélise les données et je livre quelque chose de simple qui fonctionne. Dans les systèmes déployés au Clube Pirassununga et chez My Fly, j\'ai utilisé Supabase (PostgreSQL + Realtime), JavaScript, Vercel et PWA — du panneau qui synchronise les téléviseurs en temps réel au tirage de bingo qui tourne sur mobile. J\'améliore avec les retours des utilisateurs et j\'automatise le reste avec des webhooks, des API et n8n.',
       } as Localized,
     },
     {

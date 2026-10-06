@@ -47,9 +47,9 @@ export const experience: TimelineItem[] = [
         fr: 'J\'ai développé ClubeON CCP, qui a automatisé la distribution de contenus d\'entreprise aux téléviseurs, moniteurs et appareils connectés avec synchronisation en temps réel, remplaçant les mises à jour manuelles.',
       },
       {
-        'pt-BR': 'Também desenvolvi o ClubStrategy e o Clubingo para o clube. TODO(carlos): confirmar esta frase e o número de sistemas',
-        en: 'I also built ClubStrategy and Clubingo for the club. TODO(carlos): confirm this sentence and the number of systems',
-        fr: 'J\'ai aussi développé ClubStrategy et Clubingo pour le club. TODO(carlos): confirmer cette phrase et le nombre de systèmes',
+        'pt-BR': 'Também desenvolvi o ClubStrategy e o Clubingo para o clube.',
+        en: 'I also built ClubStrategy and Clubingo for the club.',
+        fr: 'J\'ai aussi développé ClubStrategy et Clubingo pour le club.',
       },
       {
         'pt-BR':
