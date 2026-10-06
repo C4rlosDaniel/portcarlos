@@ -175,9 +175,11 @@ export const formation: TimelineItem[] = [
 ]
 
 export const certifications: string[] = [
-  'Excel na Prática',
   'Criando um Projeto com Interface Gráfica utilizando a linguagem Python',
   'Certificado de Extensão Universitário',
-  'Pacote Office Completo — Trilha dos Conhecimentos',
-  'Segurança da Informação',
+  'Fundamentos da Engenharia de Software — Faculdade Metropolitana',
+  'Segurança em Tecnologia da Informação — Faculdade Metropolitana',
+  'Lógica de Programação em Python Developer',
+  'Crie um site simples usando HTML, CSS e JavaScript',
+  'Introdução à Análise de Dados — Microsoft Power BI',
 ]
