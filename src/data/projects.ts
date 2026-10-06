@@ -164,7 +164,7 @@ const projects: Project[] = [
       fr: 'Analyste de Systèmes (PJ) — développement de la landing page',
     },
     period: '2026',
-    liveUrl: 'https://www.myfly.store',
+    liveUrl: 'https://myfly.vercel.app',
     access: 'public',
     stack: [TODO('confirmar'), 'Vercel'],
     problem: {

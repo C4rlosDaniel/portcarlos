@@ -60,7 +60,7 @@ export const experience: TimelineItem[] = [
     ],
   },
   {
-    period: 'Abr/2026 – atual',
+    period: 'Abr/2026 – Out/2026 (encerrado)',
     role: { 'pt-BR': 'Professor de Informática e Pacote Office — Monitoria Acadêmica', en: 'IT and Office Suite Teacher — Academic Monitoring', fr: 'Professeur d\'informatique et de Pack Office — Monitorat académique' },
     organization: 'FATECE',
     location: 'Pirassununga, SP',
