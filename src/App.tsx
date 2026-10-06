@@ -17,9 +17,10 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 
 function AnimatedRoutes() {
   const location = useLocation()
+  const baseKey = location.pathname.split('/')[1] ?? ''
   return (
     <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
+      <Routes location={location} key={baseKey}>
         <Route
           path="/"
           element={
