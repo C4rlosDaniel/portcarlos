@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "prebuild": "node scripts/fetch-github.mjs",
+    "prebuild": "node scripts/fetch-github.mjs && node scripts/gen-seo.mjs",
     "lint": "eslint .",
     "format": "prettier --write .",
     "preview": "vite preview",
