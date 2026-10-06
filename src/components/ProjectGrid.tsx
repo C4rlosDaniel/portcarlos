@@ -94,6 +94,9 @@ export default function ProjectGrid({ projects, filter, onFilter, onOpen }: Prop
           <ProjectCard key={project.slug} project={project} onOpen={onOpen} />
         ))}
       </div>
+      {projects.length === 0 && (
+        <p className="mt-2 text-sm text-muted">{t('projects.noResults')}</p>
+      )}
     </div>
   )
 }

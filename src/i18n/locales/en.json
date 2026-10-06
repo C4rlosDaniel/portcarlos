@@ -16,7 +16,6 @@
   },
   "home": {
     "seeProjects": "See projects",
-    "downloadCv": "Download CV",
     "learnMore": "learn more →",
     "scenePrevious": "Previous scene",
     "sceneNext": "Next scene",
@@ -33,6 +32,7 @@
     "filterSistemas": "Systems",
     "filterLanding": "Landing pages",
     "filterAutomacao": "Automation",
+    "noResults": "No projects in this category for now.",
     "viewProject": "view project",
     "accessRestricted": "Restricted access (login)",
     "problem": "Problem",
@@ -84,7 +84,6 @@
     "rateLimited": "You've already sent a postcard recently. Try again in 30 seconds.",
     "honeypot": "Leave this field blank",
     "mailtoFallback": "Send by email",
-    "cvDownload": "Download CV",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "whatsapp": "WhatsApp",

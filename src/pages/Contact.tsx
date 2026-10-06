@@ -49,14 +49,6 @@ export default function Contact() {
               {t('contact.whatsapp')}
             </a>
           )}
-          <a
-            href="/cv/Carlos-Daniel-Alencar-CV.pdf"
-            download
-            className="flex items-center gap-3 rounded-2xl border border-dashed border-accent-2/60 bg-surface px-5 py-3.5 transition-colors hover:bg-surface-2"
-          >
-            <span aria-hidden="true">↧</span>
-            {t('contact.cvDownload')}
-          </a>
         </div>
       </div>
     </section>

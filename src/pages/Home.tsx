@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { ArrowDown } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import SceneCarousel from '../components/SceneCarousel'
 import { profile } from '../data/profile'
@@ -20,14 +19,6 @@ export default function Home() {
         >
           {t('home.seeProjects')}
         </Link>
-        <a
-          href="/cv/Carlos-Daniel-Alencar-CV.pdf"
-          download
-          className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm text-text transition-colors hover:border-accent-2"
-        >
-          <ArrowDown className="h-4 w-4" aria-hidden="true" />
-          {t('home.downloadCv')}
-        </a>
       </div>
     </section>
   )

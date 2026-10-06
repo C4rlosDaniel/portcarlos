@@ -16,7 +16,6 @@
   },
   "home": {
     "seeProjects": "Ver projetos",
-    "downloadCv": "Baixar CV",
     "learnMore": "saiba mais →",
     "scenePrevious": "Cena anterior",
     "sceneNext": "Próxima cena",
@@ -33,6 +32,7 @@
     "filterSistemas": "Sistemas",
     "filterLanding": "Landing pages",
     "filterAutomacao": "Automação",
+    "noResults": "Nenhum projeto nesta categoria por enquanto.",
     "viewProject": "ver projeto",
     "accessRestricted": "Acesso restrito (login)",
     "problem": "Problema",
@@ -84,7 +84,6 @@
     "rateLimited": "Você já enviou um cartão recentemente. Tente novamente em 30 segundos.",
     "honeypot": "Deixe este campo em branco",
     "mailtoFallback": "Enviar por e-mail",
-    "cvDownload": "Baixar CV",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "whatsapp": "WhatsApp",
