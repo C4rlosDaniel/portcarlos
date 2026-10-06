@@ -10,7 +10,7 @@ const svg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
 <rect width="1200" height="630" fill="url(#g)"/>
 <circle cx="600" cy="290" r="180" fill="none" stroke="#7c5cff" stroke-width="3" opacity="0.5"/>
 <circle cx="600" cy="290" r="120" fill="none" stroke="#7c5cff" stroke-width="3" opacity="0.8"/>
-<circle cx="600" cy="290" r="55" fill="#7c5cff"/>
+<circle cx="600" cy="290" r="55" fill="#6a4cf0"/>
 <text x="600" y="312" text-anchor="middle" font-family="monospace" font-size="42" font-weight="bold" fill="#e8eaf2">Carlos Daniel</text>
 <text x="600" y="470" text-anchor="middle" font-family="monospace" font-size="26" fill="#22d3ee">Analista de Sistemas &amp; Automação</text>
 </svg>`

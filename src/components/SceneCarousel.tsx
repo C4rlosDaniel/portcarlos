@@ -118,10 +118,14 @@ export default function SceneCarousel({ scenes }: Props) {
                   aria-selected={i === index}
                   aria-label={l(item.kicker)}
                   onClick={() => go(i)}
-                  className={`h-2 rounded-full transition-all ${
-                    i === index ? 'w-6 bg-accent-2' : 'w-2 bg-border hover:bg-muted'
+                  className={`flex h-6 min-w-6 items-center ${
+                    i === index
+                      ? '[&>span]:w-6'
+                      : '[&>span]:w-2 [&>span]:bg-border [&>span]:hover:bg-muted'
                   }`}
-                />
+                >
+                  <span className="block h-2 w-2 shrink-0 rounded-full transition-all bg-accent-2" />
+                </button>
               ))}
             </div>
           </div>
