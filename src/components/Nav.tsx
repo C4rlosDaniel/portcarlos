@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import LangSwitch from './LangSwitch'
 import { profile } from '../data/profile'
+import { useScrollLock } from '../hooks/useScrollLock'
 
 const links: { to: string; key: 'home' | 'about' | 'skills' | 'projects' | 'trajectory' | 'contact'; end?: boolean }[] = [
   { to: '/', key: 'home', end: true },
@@ -24,6 +25,7 @@ function navClass(isActive: boolean) {
 export default function Nav() {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
+  useScrollLock(open)
 
   const close = () => setOpen(false)
 
@@ -70,7 +72,7 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="fixed inset-0 top-16 z-40 flex flex-col items-center gap-6 bg-bg px-6 pt-12 md:hidden">
+        <div className="fixed inset-0 top-16 z-40 flex flex-col items-center gap-6 overflow-y-auto overscroll-contain bg-bg px-6 pb-12 pt-12 md:hidden">
           <nav aria-label="Principal" className="flex w-full max-w-xs flex-col items-center gap-5">
             {links.map((link) => (
               <NavLink

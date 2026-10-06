@@ -28,8 +28,8 @@ export default function About() {
       <h1 className="mb-1 text-3xl font-bold">{t('about.title')}</h1>
       <p className="label-mono mb-10">/sobre</p>
 
-      <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
-        <div>
+      <div className="grid gap-8 sm:grid-cols-[240px_1fr] lg:grid-cols-[260px_1fr]">
+        <div className="mx-auto w-full max-w-[260px]">
           <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-full border-2 border-accent bg-surface-2">
             <svg viewBox="0 0 120 120" className="h-3/5 w-3/5" aria-hidden="true">
               <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" className="text-border" strokeWidth="1" />

@@ -33,6 +33,14 @@
     margin: 0;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-wrap: break-word;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 1rem;
   }
 
   h1,

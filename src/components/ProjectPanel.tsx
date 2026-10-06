@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import { ExternalLink, X } from 'lucide-react'
 import type { Project } from '../data/projects'
 import { l } from '../i18n'
+import { useScrollLock } from '../hooks/useScrollLock'
 import Gallery from './Gallery'
 
 function useFocusTrap(active: boolean, ref: RefObject<HTMLDivElement | null>) {
@@ -46,6 +47,7 @@ export default function ProjectPanel({ project, onClose, onNavigate }: Props) {
   const { t } = useTranslation()
   const ref = useRef<HTMLDivElement>(null)
   useFocusTrap(true, ref)
+  useScrollLock(true)
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -78,7 +80,7 @@ export default function ProjectPanel({ project, onClose, onNavigate }: Props) {
   }
 
   return (
-    <div className="fixed inset-0 z-40" role="dialog" aria-modal="true" aria-label={l(project.title)}>
+    <div className="fixed inset-0 z-[70]" role="dialog" aria-modal="true" aria-label={l(project.title)}>
       <div
         className="absolute inset-0 bg-black/60"
         role="button"
@@ -98,7 +100,7 @@ export default function ProjectPanel({ project, onClose, onNavigate }: Props) {
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
-        className="absolute inset-y-0 right-0 w-full max-w-[640px] overflow-y-auto border-l border-border bg-surface p-6 sm:p-8"
+        className="absolute inset-y-0 right-0 w-full max-w-[640px] overflow-y-auto overscroll-contain border-l border-border bg-surface p-6 pt-8 sm:p-8"
       >
         <button
           type="button"

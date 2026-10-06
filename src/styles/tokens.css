@@ -15,3 +15,9 @@
   --font-body: 'Inter Variable', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
+
+@media (max-width: 480px) {
+  :root {
+    --gutter: 16px;
+  }
+}

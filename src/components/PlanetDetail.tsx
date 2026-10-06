@@ -6,6 +6,7 @@ import { ArrowLeft, X } from 'lucide-react'
 import type { Skill } from '../data/skills'
 import { visibleProjects } from '../data/projects'
 import { l } from '../i18n'
+import { useScrollLock } from '../hooks/useScrollLock'
 
 type Props = {
   planet: Skill
@@ -16,6 +17,7 @@ export default function PlanetDetail({ planet, onClose }: Props) {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const ref = useRef<HTMLDivElement>(null)
+  useScrollLock(true)
 
   useEffect(() => {
     ref.current?.focus()
@@ -54,7 +56,7 @@ export default function PlanetDetail({ planet, onClose }: Props) {
     .filter((entry) => entry.project)
 
   return (
-    <div className="fixed inset-0 z-40" role="dialog" aria-modal="true" aria-label={l(planet.name)}>
+    <div className="fixed inset-0 z-[70]" role="dialog" aria-modal="true" aria-label={l(planet.name)}>
       <div
         className="absolute inset-0 bg-black/60"
         role="button"
@@ -75,7 +77,7 @@ export default function PlanetDetail({ planet, onClose }: Props) {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 40, opacity: 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
-        className="absolute inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto rounded-t-[var(--radius)] border border-border bg-surface p-6 sm:inset-y-0 sm:left-auto sm:right-0 sm:w-[480px] sm:max-w-full sm:rounded-none sm:rounded-l-[var(--radius)] sm:border-y-0 sm:border-r-0 sm:p-8"
+        className="absolute inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto overscroll-contain rounded-t-[var(--radius)] border border-border bg-surface p-6 sm:inset-y-0 sm:left-auto sm:right-0 sm:w-[480px] sm:max-w-full sm:rounded-none sm:rounded-l-[var(--radius)] sm:border-y-0 sm:border-r-0 sm:p-8"
       >
         <div className="flex items-start justify-between gap-4">
           <button

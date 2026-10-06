@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { X } from 'lucide-react'
 import type { GalleryItem } from '../data/projects'
 import { l } from '../i18n'
+import { useScrollLock } from '../hooks/useScrollLock'
 
 type Props = { items: readonly GalleryItem[] }
 
@@ -10,6 +11,7 @@ export default function Gallery({ items }: Props) {
   const { t } = useTranslation()
   const [active, setActive] = useState(0)
   const [lightbox, setLightbox] = useState(false)
+  useScrollLock(lightbox)
   const count = items.length
 
   const prev = useCallback(() => setActive((i) => (i - 1 + count) % count), [count])

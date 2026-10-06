@@ -42,7 +42,7 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: (slug: str
             {l(project.title)}
           </div>
         )}
-        <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 transition-opacity group-hover:opacity-100">
+        <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-4 opacity-100 transition-opacity sm:opacity-0 sm:group-hover:opacity-100">
           <span className="label-mono text-accent-2">{t('projects.viewProject')}</span>
         </div>
       </div>

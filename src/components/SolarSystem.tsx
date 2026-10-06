@@ -93,6 +93,7 @@ export default function SolarSystem({ paused, onOpen }: Props) {
                 className="cursor-pointer"
                 style={{ outlineOffset: 4 }}
               >
+                <circle r={32} fill="transparent" />
                 <circle r={planetR} fill={`url(#grad-${planet.id})`} opacity={0.95} />
                 <circle r={planetR + 6} fill="none" stroke={`${planet.colors[0]}55`} strokeWidth={8} opacity={0.45} />
               </g>

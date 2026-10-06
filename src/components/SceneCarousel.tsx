@@ -54,7 +54,7 @@ export default function SceneCarousel({ scenes }: Props) {
       role="group"
       aria-roledescription="carousel"
       aria-label={t('home.sceneLabel')}
-      className="relative flex min-h-[70vh] flex-col justify-center"
+      className="relative flex min-h-[70svh] flex-col justify-center"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -80,7 +80,7 @@ export default function SceneCarousel({ scenes }: Props) {
           className="max-w-[860px]"
         >
           <p className="label-mono mb-4">/&nbsp;{l(scene.kicker)}</p>
-          <h1 className="text-[clamp(2.5rem,7vw,5.5rem)] font-bold leading-[1.05] tracking-tight">
+          <h1 className="text-[clamp(2rem,7vw,5.5rem)] font-bold leading-[1.05] tracking-tight">
             {l(scene.title)}
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted">{l(scene.blurb)}</p>
@@ -92,7 +92,7 @@ export default function SceneCarousel({ scenes }: Props) {
 
       {count > 1 && !reduced && (
         <>
-          <div className="mt-10 flex items-center gap-3">
+          <div className="mt-10 flex flex-wrap items-center gap-3">
             <button
               type="button"
               className="rounded-full border border-border p-2 text-muted transition-colors hover:text-text"
