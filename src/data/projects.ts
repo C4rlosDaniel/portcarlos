@@ -109,7 +109,43 @@ const projects: Project[] = [
       fr: 'Tableau de bord avec élèves inscrits, liste d\'attente, classes pleines et résumé par activité.',
     },
     cover: '/projects/clubstrategy/cover.webp',
-    gallery: [{ src: '/projects/clubstrategy/gallery-1.webp', thumb: '/projects/clubstrategy/gallery-1-thumb.webp', caption: p('ClubStrategy') }],
+    gallery: [
+      {
+        src: '/projects/clubstrategy/gallery-1.webp',
+        thumb: '/projects/clubstrategy/gallery-1-thumb.webp',
+        caption: { 'pt-BR': 'ClubStrategy — tela 1', en: 'ClubStrategy — screen 1', fr: 'ClubStrategy — écran 1' },
+      },
+      {
+        src: '/projects/clubstrategy/gallery-2.webp',
+        thumb: '/projects/clubstrategy/gallery-2-thumb.webp',
+        caption: { 'pt-BR': 'ClubStrategy — tela 2', en: 'ClubStrategy — screen 2', fr: 'ClubStrategy — écran 2' },
+      },
+      {
+        src: '/projects/clubstrategy/gallery-3.webp',
+        thumb: '/projects/clubstrategy/gallery-3-thumb.webp',
+        caption: { 'pt-BR': 'ClubStrategy — tela 3', en: 'ClubStrategy — screen 3', fr: 'ClubStrategy — écran 3' },
+      },
+      {
+        src: '/projects/clubstrategy/gallery-4.webp',
+        thumb: '/projects/clubstrategy/gallery-4-thumb.webp',
+        caption: { 'pt-BR': 'ClubStrategy — tela 4', en: 'ClubStrategy — screen 4', fr: 'ClubStrategy — écran 4' },
+      },
+      {
+        src: '/projects/clubstrategy/gallery-5.webp',
+        thumb: '/projects/clubstrategy/gallery-5-thumb.webp',
+        caption: { 'pt-BR': 'ClubStrategy — tela 5', en: 'ClubStrategy — screen 5', fr: 'ClubStrategy — écran 5' },
+      },
+      {
+        src: '/projects/clubstrategy/gallery-6.webp',
+        thumb: '/projects/clubstrategy/gallery-6-thumb.webp',
+        caption: { 'pt-BR': 'ClubStrategy — tela 6', en: 'ClubStrategy — screen 6', fr: 'ClubStrategy — écran 6' },
+      },
+      {
+        src: '/projects/clubstrategy/gallery-7.webp',
+        thumb: '/projects/clubstrategy/gallery-7-thumb.webp',
+        caption: { 'pt-BR': 'ClubStrategy — tela 7', en: 'ClubStrategy — screen 7', fr: 'ClubStrategy — écran 7' },
+      },
+    ],
   },
   {
     slug: 'clubingo',

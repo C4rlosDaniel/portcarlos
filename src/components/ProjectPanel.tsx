@@ -141,7 +141,7 @@ export default function ProjectPanel({ project, onClose, onNavigate }: Props) {
           ))}
         </div>
 
-        {project.liveUrl && project.access !== 'login' && (
+        {project.liveUrl && (
           <a
             href={project.liveUrl}
             target="_blank"
