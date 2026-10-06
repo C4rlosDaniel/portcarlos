@@ -1,0 +1,17 @@
+:root {
+  --bg: #07080d;
+  --surface: #0e1018;
+  --surface-2: #161927;
+  --border: #23273a;
+  --text: #e8eaf2;
+  --muted: #8a90a6;
+  --accent: #7c5cff;
+  --accent-2: #22d3ee;
+  --ok: #34d399;
+  --radius: 14px;
+  --maxw: 1200px;
+  --gutter: 24px;
+  --font-head: 'Space Grotesk Variable', system-ui, sans-serif;
+  --font-body: 'Inter Variable', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}

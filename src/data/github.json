@@ -1,0 +1,101 @@
+[
+  {
+    "name": "PORTIFOLIO",
+    "description": "PORTIFOLIO WEB",
+    "html_url": "https://github.com/C4rlosDaniel/PORTIFOLIO",
+    "language": null,
+    "stargazers_count": 0,
+    "updated_at": "2026-10-06T16:01:45Z",
+    "fork": false
+  },
+  {
+    "name": "MYFLY---LANDINGPAGE",
+    "description": "LANDINGPAGE",
+    "html_url": "https://github.com/C4rlosDaniel/MYFLY---LANDINGPAGE",
+    "language": "TypeScript",
+    "stargazers_count": 0,
+    "updated_at": "2026-10-06T14:41:34Z",
+    "fork": false
+  },
+  {
+    "name": "C4rlosDaniel",
+    "description": "Config files for my GitHub profile.",
+    "html_url": "https://github.com/C4rlosDaniel/C4rlosDaniel",
+    "language": null,
+    "stargazers_count": 0,
+    "updated_at": "2026-09-16T15:41:58Z",
+    "fork": false
+  },
+  {
+    "name": "Sistema-de-Transmiss-o-Online-",
+    "description": "Sistema profissional de transmissão digital multi-telas desenvolvido para gerenciamento centralizado de anúncios, comunicados e apresentações em tempo real. Compatível com TV Box Android, Smart TVs, navegadores e ambientes corporativos, com sincronização automática de conteúdos e controle remoto de terminais.",
+    "html_url": "https://github.com/C4rlosDaniel/Sistema-de-Transmiss-o-Online-",
+    "language": null,
+    "stargazers_count": 0,
+    "updated_at": "2026-05-18T23:40:32Z",
+    "fork": false
+  },
+  {
+    "name": "python-excel-automation",
+    "description": "Automação de leitura, processamento e geração de planilhas Excel usando Python e OpenPyXL.",
+    "html_url": "https://github.com/C4rlosDaniel/python-excel-automation",
+    "language": "Python",
+    "stargazers_count": 0,
+    "updated_at": "2026-01-24T22:53:44Z",
+    "fork": false
+  },
+  {
+    "name": "packet-control-suite",
+    "description": "Conjunto de ferramentas para monitoramento, filtragem e análise de tráfego de rede, incluindo firewall simulado, sniffer e sistema de whitelist/blacklist. Totalmente modular.",
+    "html_url": "https://github.com/C4rlosDaniel/packet-control-suite",
+    "language": "Python",
+    "stargazers_count": 1,
+    "updated_at": "2025-11-26T21:09:58Z",
+    "fork": false
+  },
+  {
+    "name": "slow-print-cli",
+    "description": "A terminal-based Python program that uses a slow typing function (slow_print) to create an interactive experience. The user answers questions and receives motivational and reflective messages, all displayed with an animated typing effect.",
+    "html_url": "https://github.com/C4rlosDaniel/slow-print-cli",
+    "language": "Python",
+    "stargazers_count": 0,
+    "updated_at": "2025-11-26T03:05:09Z",
+    "fork": false
+  },
+  {
+    "name": "-Interface-de-Login-em-Python-com-Tkinter-e-CustomTkinter",
+    "description": "Interface gráfica simples de login criada em Python usando Tkinter e CustomTkinter, incluindo campos de e-mail, senha, checkbox e botão funcional com tema escuro.",
+    "html_url": "https://github.com/C4rlosDaniel/-Interface-de-Login-em-Python-com-Tkinter-e-CustomTkinter",
+    "language": "Python",
+    "stargazers_count": 0,
+    "updated_at": "2025-11-24T22:13:12Z",
+    "fork": false
+  },
+  {
+    "name": "Scanner-de-Portas-TCP-com-Multithreading-em-Python",
+    "description": "Ferramenta em Python para varredura rápida de portas TCP usando multithreading e fila (Queue) para processamento concorrente.",
+    "html_url": "https://github.com/C4rlosDaniel/Scanner-de-Portas-TCP-com-Multithreading-em-Python",
+    "language": "Python",
+    "stargazers_count": 0,
+    "updated_at": "2025-11-24T17:08:55Z",
+    "fork": false
+  },
+  {
+    "name": "Algoritmos-de-Implementa-o-em-JavaScript-Merge-Sort-e-Quick-Sort",
+    "description": "Este repositório contém uma página interativa em HTML, CSS e JavaScript desenvolvida para demonstrar, de forma visual e detalhada, o funcionamento dos algoritmos Merge Sort e Quick Sort.",
+    "html_url": "https://github.com/C4rlosDaniel/Algoritmos-de-Implementa-o-em-JavaScript-Merge-Sort-e-Quick-Sort",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "updated_at": "2025-11-24T17:06:41Z",
+    "fork": false
+  },
+  {
+    "name": "Keypress-Logger-Demo",
+    "description": "Keypress Logger Demo é um pequeno projeto educacional que mostra como capturar teclas pressionadas no teclado usando Python e a biblioteca pynput. Ele demonstra conceitos de monitoramento de eventos e manipulação de arquivos em um exemplo simples e direto.",
+    "html_url": "https://github.com/C4rlosDaniel/Keypress-Logger-Demo",
+    "language": "Python",
+    "stargazers_count": 0,
+    "updated_at": "2025-11-24T16:30:26Z",
+    "fork": false
+  }
+]
