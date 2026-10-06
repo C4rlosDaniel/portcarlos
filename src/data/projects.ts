@@ -6,6 +6,7 @@ export type Access = 'public' | 'login'
 
 export type GalleryItem = {
   src: string
+  thumb?: string
   caption: Localized
 }
 
@@ -82,7 +83,7 @@ const projects: Project[] = [
     ],
     result: p(TODO('número real (ex.: quantas telas, quanto tempo de atualização foi economizado)')),
     cover: '/projects/clubeon/cover.webp',
-    gallery: [{ src: '/projects/clubeon/gallery-1.webp', caption: p('ClubeON') }],
+    gallery: [{ src: '/projects/clubeon/gallery-1.webp', thumb: '/projects/clubeon/gallery-1-thumb.webp', caption: p('ClubeON') }],
   },
   {
     slug: 'clubstrategy',
@@ -113,7 +114,7 @@ const projects: Project[] = [
     },
     result: p(TODO('resultado real')),
     cover: '/projects/clubstrategy/cover.webp',
-    gallery: [{ src: '/projects/clubstrategy/gallery-1.webp', caption: p('ClubStrategy') }],
+    gallery: [{ src: '/projects/clubstrategy/gallery-1.webp', thumb: '/projects/clubstrategy/gallery-1-thumb.webp', caption: p('ClubStrategy') }],
   },
   {
     slug: 'clubingo',
@@ -146,7 +147,7 @@ const projects: Project[] = [
     },
     result: p(TODO('ex.: eventos em que foi usado, nº de participantes')),
     cover: '/projects/clubingo/cover.webp',
-    gallery: [{ src: '/projects/clubingo/gallery-1.webp', caption: p('Clubingo') }],
+    gallery: [{ src: '/projects/clubingo/gallery-1.webp', thumb: '/projects/clubingo/gallery-1-thumb.webp', caption: p('Clubingo') }],
   },
   {
     slug: 'myfly',
@@ -180,7 +181,7 @@ const projects: Project[] = [
     },
     result: p(TODO('resultado real')),
     cover: '/projects/myfly/cover.webp',
-    gallery: [{ src: '/projects/myfly/gallery-1.webp', caption: p('My Fly') }],
+    gallery: [{ src: '/projects/myfly/gallery-1.webp', thumb: '/projects/myfly/gallery-1-thumb.webp', caption: p('My Fly') }],
   },
   {
     slug: 'n8n-lab',

@@ -63,7 +63,7 @@ export default function Gallery({ items }: Props) {
             }`}
           >
             <img
-              src={item.src}
+              src={item.thumb ?? item.src}
               alt=""
               width={110}
               height={80}
