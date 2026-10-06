@@ -35,7 +35,7 @@ export const experience: TimelineItem[] = [
     ],
   },
   {
-    period: 'Mar/2026 – Set/2026 (7 meses; encerrado)',
+    period: 'Mar/2026 – Set/2026',
     role: { 'pt-BR': 'Estagiário de TI — Suporte e Infraestrutura', en: 'IT Intern — Support and Infrastructure', fr: 'Stagiaire IT — Support et Infrastructure' },
     organization: 'Clube Pirassununga',
     location: 'Pirassununga, SP',
@@ -60,7 +60,7 @@ export const experience: TimelineItem[] = [
     ],
   },
   {
-    period: 'Abr/2026 – Out/2026 (encerrado)',
+    period: 'Abr/2026 – Out/2026',
     role: { 'pt-BR': 'Professor de Informática e Pacote Office — Monitoria Acadêmica', en: 'IT and Office Suite Teacher — Academic Monitoring', fr: 'Professeur d\'informatique et de Pack Office — Monitorat académique' },
     organization: 'FATECE',
     location: 'Pirassununga, SP',
