@@ -53,7 +53,8 @@
     "studying": "En apprentissage",
     "usedIn": "Utilisé dans",
     "back": "← retour au système",
-    "sun": "Soleil — système solaire de compétences · Carlos"
+    "sun": "Soleil — système solaire de compétences · Carlos",
+    "hint": "Cliquez sur une planète pour ouvrir le détail de la compétence."
   },
   "trajectory": {
     "experience": "Expérience",

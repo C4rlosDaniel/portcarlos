@@ -53,7 +53,8 @@
     "studying": "Estudando",
     "usedIn": "Usado em",
     "back": "← voltar ao sistema",
-    "sun": "Sol — sistema solar de habilidades · Carlos"
+    "sun": "Sol — sistema solar de habilidades · Carlos",
+    "hint": "Clique em um planeta para abrir o detalhe da habilidade."
   },
   "trajectory": {
     "experience": "Experiência",

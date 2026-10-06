@@ -53,7 +53,8 @@
     "studying": "Learning",
     "usedIn": "Used in",
     "back": "← back to the system",
-    "sun": "Sun — skills solar system · Carlos"
+    "sun": "Sun — skills solar system · Carlos",
+    "hint": "Click a planet to open the skill detail."
   },
   "trajectory": {
     "experience": "Experience",
