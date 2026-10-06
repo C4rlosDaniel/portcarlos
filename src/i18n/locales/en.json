@@ -80,6 +80,8 @@
     "sendAnother": "Send another",
     "successTitle": "Postcard sent!",
     "successText": "I'll reply as soon as I can.",
+    "successMailtoTitle": "Postcard ready!",
+    "successMailtoText": "Opened your email app with the message filled in — just hit send. If nothing opened, write to {{email}}.",
     "error": "Oops! Something went wrong. Try again or reach me on LinkedIn.",
     "rateLimited": "You've already sent a postcard recently. Try again in 30 seconds.",
     "honeypot": "Leave this field blank",

@@ -80,6 +80,8 @@
     "sendAnother": "Envoyer une autre",
     "successTitle": "Carte postale envoyée !",
     "successText": "Je répondrai dès que possible.",
+    "successMailtoTitle": "Carte postale prête !",
+    "successMailtoText": "Votre application e-mail s'est ouverte avec le message prérempli — il ne reste qu'à envoyer. Si rien ne s'est ouvert, écrivez à {{email}}.",
     "error": "Oups ! Un problème est survenu. Réessayez ou écrivez-moi sur LinkedIn.",
     "rateLimited": "Vous avez déjà envoyé une carte récemment. Réessayez dans 30 secondes.",
     "honeypot": "Laissez ce champ vide",

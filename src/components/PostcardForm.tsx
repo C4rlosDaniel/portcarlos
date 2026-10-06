@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Loader2, Mail, Send } from 'lucide-react'
 
-type Status = 'idle' | 'sending' | 'success' | 'error'
+type Status = 'idle' | 'sending' | 'success' | 'opened' | 'error'
 
 const WEBHOOK_URL = import.meta.env.VITE_N8N_WEBHOOK_URL as string | undefined
 const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL as string | undefined
@@ -59,21 +59,36 @@ export default function PostcardForm() {
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault()
-    if (!hasWebhook) return
     if (honeypot.trim()) {
       setStatus('success')
       return
     }
 
-    const last = readLastSend()
-    if (Date.now() - last < RATE_LIMIT_MS) {
-      setErrors({})
-      setRateLimited(true)
-      setStatus('error')
-      return
+    if (hasWebhook) {
+      const last = readLastSend()
+      if (Date.now() - last < RATE_LIMIT_MS) {
+        setErrors({})
+        setRateLimited(true)
+        setStatus('error')
+        return
+      }
     }
 
     if (!validate()) return
+
+    if (!hasWebhook) {
+      if (!CONTACT_EMAIL) {
+        setErrors({})
+        setRateLimited(false)
+        setStatus('error')
+        return
+      }
+      setErrors({})
+      setRateLimited(false)
+      window.location.href = buildMailto(name.trim(), email.trim(), message.trim(), i18n.language)
+      setStatus('opened')
+      return
+    }
 
     setStatus('sending')
     setErrors({})
@@ -124,13 +139,19 @@ export default function PostcardForm() {
       </div>
 
       <div className="p-6">
-        {status === 'success' ? (
+        {status === 'success' || status === 'opened' ? (
           <div role="status" aria-live="polite" className="flex flex-col items-center gap-4 py-10 text-center">
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-400/15 text-emerald-300" aria-hidden="true">
               ✓
             </span>
-            <p className="text-xl font-semibold">{t('contact.successTitle')}</p>
-            <p className="text-muted">{t('contact.successText')}</p>
+            <p className="text-xl font-semibold">
+              {status === 'opened' ? t('contact.successMailtoTitle') : t('contact.successTitle')}
+            </p>
+            <p className="text-muted">
+              {status === 'opened'
+                ? t('contact.successMailtoText', { email: CONTACT_EMAIL ?? '' })
+                : t('contact.successText')}
+            </p>
             <button
               type="button"
               onClick={reset}
@@ -226,7 +247,7 @@ export default function PostcardForm() {
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="submit"
-                  disabled={!hasWebhook || status === 'sending'}
+                  disabled={status === 'sending'}
                   className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent/80 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {status === 'sending' ? (
