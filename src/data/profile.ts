@@ -24,7 +24,7 @@ export const profile = {
   links: {
     linkedin: 'https://www.linkedin.com/in/carlos-alencar-22b950353',
     github: 'https://github.com/C4rlosDaniel',
-    instagram: 'https://www.instagram.com/c4rl0s.d4niel/',
+    instagram: 'https://www.instagram.com/c4rl0s.alenc4r/',
   },
   scenes: [
     {
