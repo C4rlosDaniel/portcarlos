@@ -25,8 +25,9 @@ function ensureClubeonPlaceholder() {
         'Carlos: place sanitized screenshots here (cover.webp, gallery-1.webp...).\n',
       )
     }
+    const existing = fs.readdirSync(clubeonDir).some((f) => /^cover\.(png|webp)$/i.test(f))
     const placeholder = path.join(clubeonDir, 'cover.png')
-    if (!fs.existsSync(placeholder)) {
+    if (!existing && !fs.existsSync(placeholder)) {
       const svg = `<svg width="876" height="632" xmlns="http://www.w3.org/2000/svg">
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/>
