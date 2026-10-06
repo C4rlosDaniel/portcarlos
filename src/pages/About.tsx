@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { CircuitBoard, GraduationCap, Languages } from 'lucide-react'
 import type { ComponentType, SVGProps } from 'react'
@@ -17,7 +16,6 @@ const interestIcons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
 export default function About() {
   const { t } = useTranslation()
   useDocumentTitle(t('nav.about') + ' — Carlos Daniel')
-  const [photoOk, setPhotoOk] = useState(true)
 
   const socials = [
     { href: profile.links.linkedin, label: 'LinkedIn', Icon: LinkedinIcon },
@@ -32,17 +30,25 @@ export default function About() {
 
       <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
         <div>
-          <div className="flex aspect-square w-full items-center justify-center overflow-hidden rounded-full border-2 border-accent bg-surface-2">
-            {photoOk ? (
-              <img
-                src="/profile.webp"
-                alt={t('about.photoAlt')}
-                className="h-full w-full object-cover"
-                onError={() => setPhotoOk(false)}
-              />
-            ) : (
-              <span className="font-head text-6xl font-bold text-accent">{t('about.photoFallback')}</span>
-            )}
+          <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-full border-2 border-accent bg-surface-2">
+            <svg viewBox="0 0 120 120" className="h-3/5 w-3/5" aria-hidden="true">
+              <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" className="text-border" strokeWidth="1" />
+              <circle cx="60" cy="60" r="40" fill="none" stroke="var(--accent-2)" strokeWidth="1.5" strokeDasharray="12 8" opacity="0.65" />
+              <circle cx="60" cy="60" r="28" fill="var(--accent)" opacity="0.12" />
+              <circle cx="24" cy="30" r="4" fill="var(--accent-2)" opacity="0.9" />
+              <circle cx="96" cy="88" r="3" fill="var(--accent)" opacity="0.8" />
+              <text
+                x="60"
+                y="70"
+                textAnchor="middle"
+                fontFamily="'Space Grotesk Variable', sans-serif"
+                fontSize="34"
+                fontWeight="700"
+                fill="var(--text)"
+              >
+                CD
+              </text>
+            </svg>
           </div>
           <div className="mt-6 flex justify-center gap-3">
             {socials.map(({ href, label, Icon }) => (
