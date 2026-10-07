@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const publicDir = path.resolve(__dirname, '..', 'public')
-const base = (process.env.VITE_SITE_URL ?? 'https://portfolio.example.com').replace(/\/+$/, '')
+const base = (process.env.VITE_SITE_URL ?? 'https://portcarlos.vercel.app').replace(/\/+$/, '')
 
 const routes = ['/', '/sobre', '/skills', '/projetos', '/trajetoria', '/contato']
 

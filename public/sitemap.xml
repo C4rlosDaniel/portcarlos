@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://portfolio.example.com/</loc></url>
-  <url><loc>https://portfolio.example.com/sobre</loc></url>
-  <url><loc>https://portfolio.example.com/skills</loc></url>
-  <url><loc>https://portfolio.example.com/projetos</loc></url>
-  <url><loc>https://portfolio.example.com/trajetoria</loc></url>
-  <url><loc>https://portfolio.example.com/contato</loc></url>
+  <url><loc>https://portcarlos.vercel.app/</loc></url>
+  <url><loc>https://portcarlos.vercel.app/sobre</loc></url>
+  <url><loc>https://portcarlos.vercel.app/skills</loc></url>
+  <url><loc>https://portcarlos.vercel.app/projetos</loc></url>
+  <url><loc>https://portcarlos.vercel.app/trajetoria</loc></url>
+  <url><loc>https://portcarlos.vercel.app/contato</loc></url>
 </urlset>
