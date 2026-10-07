@@ -95,5 +95,15 @@
     "title": "Page introuvable",
     "text": "Oups ! Cette page n'existe pas. Utilisez le menu ou revenez à l'accueil.",
     "home": "Retour à l'accueil"
+  },
+  "assistant": {
+    "open": "Ouvrir l'assistant",
+    "close": "Fermer l'assistant",
+    "title": "Représentant numérique",
+    "subtitle": "Réponses sur le portfolio de Carlos",
+    "placeholder": "Posez une question (projets, compétences...)",
+    "send": "Envoyer",
+    "typing": "écrit...",
+    "disclaimer": "Assistant à réponses préprogrammées, sans IA. Contenu généré à partir des données de ce portfolio."
   }
 }

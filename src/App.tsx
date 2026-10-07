@@ -6,6 +6,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Starfield from './components/Starfield'
 import PanelTransition from './components/PanelTransition'
+import ChatWidget from './components/ChatWidget'
 
 const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
@@ -107,6 +108,7 @@ export default function App() {
         {t('skipLink')}
       </a>
       <Nav />
+      <ChatWidget />
       <main id="main" className="flex min-h-screen flex-col pt-16">
         <div className="flex-1">
           <Suspense fallback={null}>

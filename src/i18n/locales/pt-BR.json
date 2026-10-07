@@ -95,5 +95,15 @@
     "title": "Página não encontrada",
     "text": "Opa! Essa página não existe. Use o menu ou volte para o início.",
     "home": "Voltar ao início"
+  },
+  "assistant": {
+    "open": "Abrir assistente",
+    "close": "Fechar assistente",
+    "title": "Representante digital",
+    "subtitle": "Respostas sobre o portfólio do Carlos",
+    "placeholder": "Pergunte sobre projetos, skills...",
+    "send": "Enviar",
+    "typing": "digitando...",
+    "disclaimer": "Assistente com respostas pré-programadas, sem IA. Conteúdo gerado dos dados deste portfólio."
   }
 }

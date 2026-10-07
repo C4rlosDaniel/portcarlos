@@ -95,5 +95,15 @@
     "title": "Page not found",
     "text": "Oops! This page doesn't exist. Use the menu or head back home.",
     "home": "Back to home"
+  },
+  "assistant": {
+    "open": "Open assistant",
+    "close": "Close assistant",
+    "title": "Digital representative",
+    "subtitle": "Answers about Carlos's portfolio",
+    "placeholder": "Ask about projects, skills...",
+    "send": "Send",
+    "typing": "typing...",
+    "disclaimer": "Pre-programmed assistant, no AI. Content generated from this portfolio's data."
   }
 }
