@@ -105,8 +105,11 @@ Duas peças em `agent/`, além do chat embutido no site:
   **CV foi removido** (não há mais botão de download).
 
 ## Imagens (public)
-- `public/projects/<slug>/cover.webp` + `gallery-1.webp` (+ `-thumb.webp`).
+- `public/projects/<slug>/cover.webp` + `gallery-N.webp` (+ `-thumb.webp`).
   Gerados por `scripts/screenshots.mjs` + `scripts/make-thumbs.mjs`.
+  **Screenshot manual**: copiar como `gallery-N.png` na pasta do projeto, rodar
+  `npm run thumbs` (gera webp 1600w + thumb 220x160 e apaga o png) e registrar
+  em `src/data/projects.ts` (src, thumb, caption pt/en/fr).
 - ⚠️ `clubeon`: **não** rodar screenshots de novo — a arte de login original
   (restaurada de um commit antigo) é a única cópia; `screenshots.mjs` já pula
   cover existente do clubeon. MyFly usa https://myfly.vercel.app.
@@ -140,7 +143,8 @@ Duas peças em `agent/`, além do chat embutido no site:
 ## Pendências / abertos (out/2026)
 - Blocos "Resultado" dos projetos estão vazios (qualquer número real: telas
   sincronizadas, economia de tempo, participantes de eventos).
-- Galeria: só 1 screenshot por projeto (dá p/ adicionar mais).
+- Galeria: ClubeON 11 telas (capa + 10 manual, out/2026), Clubingo 8 (capa +
+  7 manual), ClubStrategy 7. My Fly ainda tem só 1 screenshot.
 - Webhook n8n do formulário ainda não existe.
 - README.md está desatualizado (cita `public/profile.webp` e pasta `cv/`,
   que não existem mais).

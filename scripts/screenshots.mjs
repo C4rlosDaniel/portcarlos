@@ -18,13 +18,6 @@ const clubeonDir = path.join(root, 'public/projects/clubeon')
 function ensureClubeonPlaceholder() {
   try {
     fs.mkdirSync(clubeonDir, { recursive: true })
-    const readme = path.join(clubeonDir, 'README.txt')
-    if (!fs.existsSync(readme)) {
-      fs.writeFileSync(
-        readme,
-        'Carlos: place sanitized screenshots here (cover.webp, gallery-1.webp...).\n',
-      )
-    }
     const existing = fs.readdirSync(clubeonDir).some((f) => /^cover\.(png|webp)$/i.test(f))
     const placeholder = path.join(clubeonDir, 'cover.png')
     if (!existing && !fs.existsSync(placeholder)) {
