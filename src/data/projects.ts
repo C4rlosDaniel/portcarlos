@@ -78,7 +78,95 @@ const projects: Project[] = [
       },
     ],
     cover: '/projects/clubeon/cover.webp',
-    gallery: [{ src: '/projects/clubeon/gallery-1.webp', thumb: '/projects/clubeon/gallery-1-thumb.webp', caption: p('ClubeON') }],
+    gallery: [
+      { src: '/projects/clubeon/gallery-1.webp', thumb: '/projects/clubeon/gallery-1-thumb.webp', caption: p('ClubeON') },
+      {
+        src: '/projects/clubeon/gallery-2.webp',
+        thumb: '/projects/clubeon/gallery-2-thumb.webp',
+        caption: {
+          'pt-BR': 'Painel administrativo e prévia de TV',
+          en: 'Admin panel and TV preview',
+          fr: 'Panneau d\'administration et prévision TV',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-3.webp',
+        thumb: '/projects/clubeon/gallery-3-thumb.webp',
+        caption: {
+          'pt-BR': 'Editor de apresentação',
+          en: 'Presentation editor',
+          fr: 'Éditeur de présentation',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-4.webp',
+        thumb: '/projects/clubeon/gallery-4-thumb.webp',
+        caption: {
+          'pt-BR': 'Atribuição de apresentações aos terminais',
+          en: 'Assigning presentations to terminals',
+          fr: 'Attribution des présentations aux terminaux',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-5.webp',
+        thumb: '/projects/clubeon/gallery-5-thumb.webp',
+        caption: { 'pt-BR': 'Biblioteca de mídias', en: 'Media library', fr: 'Médiathèque' },
+      },
+      {
+        src: '/projects/clubeon/gallery-6.webp',
+        thumb: '/projects/clubeon/gallery-6-thumb.webp',
+        caption: {
+          'pt-BR': 'Faixa de notícias (rodapé)',
+          en: 'News ticker (footer)',
+          fr: 'Bandeau d\'actualités (pied de page)',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-7.webp',
+        thumb: '/projects/clubeon/gallery-7-thumb.webp',
+        caption: {
+          'pt-BR': 'SplitScreen — listagem de layouts',
+          en: 'SplitScreen — layout list',
+          fr: 'SplitScreen — liste des dispositions',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-8.webp',
+        thumb: '/projects/clubeon/gallery-8-thumb.webp',
+        caption: {
+          'pt-BR': 'Editor de layout SplitScreen',
+          en: 'SplitScreen layout editor',
+          fr: 'Éditeur de disposition SplitScreen',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-9.webp',
+        thumb: '/projects/clubeon/gallery-9-thumb.webp',
+        caption: {
+          'pt-BR': 'Estúdio de transmissão ao vivo',
+          en: 'Live broadcast studio',
+          fr: 'Studio de diffusion en direct',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-10.webp',
+        thumb: '/projects/clubeon/gallery-10-thumb.webp',
+        caption: {
+          'pt-BR': 'Login (administrador / terminal)',
+          en: 'Login (admin / terminal)',
+          fr: 'Connexion (administrateur / terminal)',
+        },
+      },
+      {
+        src: '/projects/clubeon/gallery-11.webp',
+        thumb: '/projects/clubeon/gallery-11-thumb.webp',
+        caption: {
+          'pt-BR': 'Terminal em execução na TV',
+          en: 'Terminal running on the TV',
+          fr: 'Terminal en cours sur le TV',
+        },
+      },
+    ],
   },
   {
     slug: 'clubstrategy',
@@ -176,7 +264,60 @@ const projects: Project[] = [
       fr: 'Système de bingo avec synchronisation en temps réel entre le tirage et les contrôleurs, installable sur mobile (PWA).',
     },
     cover: '/projects/clubingo/cover.webp',
-    gallery: [{ src: '/projects/clubingo/gallery-1.webp', thumb: '/projects/clubingo/gallery-1-thumb.webp', caption: p('Clubingo') }],
+    gallery: [
+      { src: '/projects/clubingo/gallery-1.webp', thumb: '/projects/clubingo/gallery-1-thumb.webp', caption: p('Clubingo') },
+      {
+        src: '/projects/clubingo/gallery-2.webp',
+        thumb: '/projects/clubingo/gallery-2-thumb.webp',
+        caption: {
+          'pt-BR': 'Acesso (sorteador / conferente)',
+          en: 'Access (drawer / checker)',
+          fr: 'Accès (tireur / contrôleur)',
+        },
+      },
+      {
+        src: '/projects/clubingo/gallery-3.webp',
+        thumb: '/projects/clubingo/gallery-3-thumb.webp',
+        caption: { 'pt-BR': 'Tela do sorteador', en: 'Drawer screen', fr: 'Écran du tireur' },
+      },
+      {
+        src: '/projects/clubingo/gallery-4.webp',
+        thumb: '/projects/clubingo/gallery-4-thumb.webp',
+        caption: { 'pt-BR': 'Número sorteado', en: 'Drawn number', fr: 'Numéro tiré' },
+      },
+      {
+        src: '/projects/clubingo/gallery-5.webp',
+        thumb: '/projects/clubingo/gallery-5-thumb.webp',
+        caption: { 'pt-BR': 'Números sorteados', en: 'Drawn numbers', fr: 'Numéros tirés' },
+      },
+      {
+        src: '/projects/clubingo/gallery-6.webp',
+        thumb: '/projects/clubingo/gallery-6-thumb.webp',
+        caption: {
+          'pt-BR': 'Tela do conferente (vertical)',
+          en: 'Checker screen (vertical)',
+          fr: 'Écran du contrôleur (vertical)',
+        },
+      },
+      {
+        src: '/projects/clubingo/gallery-7.webp',
+        thumb: '/projects/clubingo/gallery-7-thumb.webp',
+        caption: {
+          'pt-BR': 'Tela do conferente (horizontal)',
+          en: 'Checker screen (horizontal)',
+          fr: 'Écran du contrôleur (horizontal)',
+        },
+      },
+      {
+        src: '/projects/clubingo/gallery-8.webp',
+        thumb: '/projects/clubingo/gallery-8-thumb.webp',
+        caption: {
+          'pt-BR': 'Saída protegida por senha',
+          en: 'Password-protected exit',
+          fr: 'Sortie protégée par mot de passe',
+        },
+      },
+    ],
   },
   {
     slug: 'myfly',

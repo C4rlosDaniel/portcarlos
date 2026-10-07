@@ -174,7 +174,6 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 ## Repositorios GitHub (atualizado automaticamente)
 
 - portcarlos (TypeScript) — PORTIFOLIO WEB: https://github.com/C4rlosDaniel/portcarlos
-- MYFLY---LANDINGPAGE (TypeScript) — LANDINGPAGE: https://github.com/C4rlosDaniel/MYFLY---LANDINGPAGE
 - C4rlosDaniel — Config files for my GitHub profile.: https://github.com/C4rlosDaniel/C4rlosDaniel
 - Sistema-de-Transmiss-o-Online- — Sistema profissional de transmissão digital multi-telas desenvolvido para gerenciamento centralizado de anúncios, comunicados e apresentações em tempo real. Compatível com TV Box Android, Smart TVs, navegadores e ambientes corporativos, com sincronização automática de conteúdos e controle remoto de terminais.: https://github.com/C4rlosDaniel/Sistema-de-Transmiss-o-Online-
 - python-excel-automation (Python) — Automação de leitura, processamento e geração de planilhas Excel usando Python e OpenPyXL.: https://github.com/C4rlosDaniel/python-excel-automation
