@@ -67,14 +67,29 @@ const projects: Project[] = [
     },
     decisions: [
       {
-        'pt-BR': 'Três perfis de acesso: administrador, terminal de exibição e usuário',
-        en: 'Three access roles: administrator, display terminal and user',
-        fr: 'Trois profils d\'accès : administrateur, terminal d\'affichage et utilisateur',
+        'pt-BR': 'Supabase (PostgreSQL + Realtime) para publicar o conteúdo uma vez e os terminais sincronizarem sozinhos',
+        en: 'Supabase (PostgreSQL + Realtime) so content is published once and the terminals sync on their own',
+        fr: 'Supabase (PostgreSQL + Realtime) pour publier le contenu une fois et laisser les terminaux se synchroniser seuls',
       },
       {
-        'pt-BR': 'Sincronização em tempo real entre painel e terminais',
-        en: 'Real-time sync between panel and terminals',
-        fr: 'Synchronisation en temps réel entre le tableau de bord et les terminaux',
+        'pt-BR': 'JavaScript puro no painel e no terminal, para rodar em TVs e dispositivos simples sem instalar app',
+        en: 'Plain JavaScript on both panel and terminal, to run on TVs and simple devices without installing an app',
+        fr: 'JavaScript pur côté panneau et terminal, pour tourner sur des TV et appareils simples sans installer d\'application',
+      },
+      {
+        'pt-BR': 'Três perfis de acesso — administrador, terminal de exibição e usuário — separando quem publica de quem só exibe',
+        en: 'Three access roles — administrator, display terminal and user — separating who publishes from who only displays',
+        fr: 'Trois profils d\'accès — administrateur, terminal d\'affichage et utilisateur — séparant qui publie de qui affiche seulement',
+      },
+      {
+        'pt-BR': 'Editor com layouts prontos (tela cheia, SplitScreen e faixa de notícias) reaproveitando uma biblioteca de mídias',
+        en: 'Editor with ready-made layouts (full screen, SplitScreen and news ticker) reusing a media library',
+        fr: 'Éditeur avec des dispositions prêtes (plein écran, SplitScreen et bandeau d\'actualités) réutilisant une médiathèque',
+      },
+      {
+        'pt-BR': 'IA no desenvolvimento para acelerar a entrega, com revisão manual do que vai a produção',
+        en: 'AI in development to speed up delivery, with manual review of what reaches production',
+        fr: 'IA dans le développement pour accélérer la livraison, avec une revue manuelle de ce qui part en production',
       },
     ],
     result: {
@@ -202,19 +217,24 @@ const projects: Project[] = [
     },
     decisions: [
       {
-        'pt-BR': 'Dashboard único que consolida alunos matriculados, lista de espera e turmas lotadas',
-        en: 'A single dashboard consolidating enrolled students, waiting list and full classes',
-        fr: 'Un tableau de bord unique regroupant élèves inscrits, liste d\'attente et classes pleines',
+        'pt-BR': 'Supabase (PostgreSQL) como fonte única de matrículas, lista de espera e turmas, no lugar de planilhas dispersas',
+        en: 'Supabase (PostgreSQL) as the single source for enrollments, waiting list and classes, instead of scattered spreadsheets',
+        fr: 'Supabase (PostgreSQL) comme source unique des inscriptions, listes d\'attente et classes, au lieu de feuilles dispersées',
       },
       {
-        'pt-BR': 'Resumo por modalidade para leitura rápida da ocupação',
-        en: 'Summary by activity for a quick read of occupancy',
-        fr: 'Résumé par activité pour une lecture rapide de l\'occupation',
+        'pt-BR': 'Consultas agregadas no banco (por modalidade e status) para o dashboard abrir rápido',
+        en: 'Aggregated queries in the database (by activity and status) so the dashboard opens fast',
+        fr: 'Requêtes agrégées dans la base (par activité et statut) pour un tableau de bord rapide à ouvrir',
       },
       {
-        'pt-BR': 'Consultas agregadas sobre PostgreSQL/Supabase',
-        en: 'Aggregated queries on PostgreSQL/Supabase',
-        fr: 'Requêtes agrégées sur PostgreSQL/Supabase',
+        'pt-BR': 'Tela única com matriculados, lista de espera e turmas lotadas, dando visão imediata da ocupação',
+        en: 'A single screen with enrolled students, waiting list and full classes, giving an immediate view of occupancy',
+        fr: 'Un écran unique avec inscrits, liste d\'attente et classes pleines, donnant une vue immédiate de l\'occupation',
+      },
+      {
+        'pt-BR': 'Front-end web em JavaScript puro, acessível de qualquer navegador da secretaria',
+        en: 'Web front-end in plain JavaScript, accessible from any office browser',
+        fr: 'Front-end web en JavaScript pur, accessible depuis n\'importe quel navigateur du secrétariat',
       },
     ],
     result: {
@@ -292,19 +312,29 @@ const projects: Project[] = [
     },
     decisions: [
       {
-        'pt-BR': 'Sincronização em tempo real entre sorteador e conferentes (Supabase Realtime)',
-        en: 'Real-time sync between drawer and checkers (Supabase Realtime)',
-        fr: 'Synchronisation en temps réel entre le tirage et les contrôleurs (Supabase Realtime)',
+        'pt-BR': 'Supabase Realtime para o número sorteado chegar aos conferentes no mesmo instante, sem recarregar a tela',
+        en: 'Supabase Realtime so the drawn number reaches the checkers instantly, without reloading the screen',
+        fr: 'Supabase Realtime pour que le numéro tiré arrive aux contrôleurs à l\'instant, sans recharger l\'écran',
       },
       {
-        'pt-BR': 'PWA instalável no celular, sem depender de loja de aplicativos',
-        en: 'PWA installable on mobile, without relying on an app store',
-        fr: 'PWA installable sur mobile, sans dépendre d\'un store d\'applications',
+        'pt-BR': 'PWA instalável no celular, evitando depender de loja de aplicativos durante o evento',
+        en: 'Installable mobile PWA, avoiding reliance on an app store during the event',
+        fr: 'PWA installable sur mobile, évitant de dépendre d\'un store d\'applications pendant l\'événement',
       },
       {
-        'pt-BR': 'Papéis separados (sorteador/conferente) com saída protegida por senha',
-        en: 'Separate roles (drawer/checker) with a password-protected exit',
-        fr: 'Rôles distincts (tireur/contrôleur) avec sortie protégée par mot de passe',
+        'pt-BR': 'Papéis separados (sorteador e conferente) com saída protegida por senha, para ninguém encerrar a sessão por engano',
+        en: 'Separate roles (drawer and checker) with a password-protected exit, so nobody ends the session by mistake',
+        fr: 'Rôles distincts (tireur et contrôleur) avec sortie protégée par mot de passe, pour que personne ne ferme la session par erreur',
+      },
+      {
+        'pt-BR': 'Layout responsivo que serve tanto na vertical quanto na horizontal do celular do conferente',
+        en: 'Responsive layout that works in both portrait and landscape on the checker\'s phone',
+        fr: 'Disposition responsive qui fonctionne en portrait comme en paysage sur le téléphone du contrôleur',
+      },
+      {
+        'pt-BR': 'Build estático na Vercel, mantendo a página leve com a sincronização por conta do Supabase',
+        en: 'Static build on Vercel, keeping the page lightweight with sync handled by Supabase',
+        fr: 'Build statique sur Vercel, gardant la page légère avec la synchronisation assurée par Supabase',
       },
     ],
     result: {

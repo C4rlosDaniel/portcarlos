@@ -99,8 +99,11 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 - Problema: Os conteúdos exibidos nas TVs e monitores do clube eram atualizados manualmente, tela por tela.
 - Solucao: Uma plataforma centralizada: o administrador publica o conteúdo uma vez e os terminais (TVs, monitores e dispositivos conectados) sincronizam em tempo real.
 - Decisoes:
-  - Três perfis de acesso: administrador, terminal de exibição e usuário
-  - Sincronização em tempo real entre painel e terminais
+  - Supabase (PostgreSQL + Realtime) para publicar o conteúdo uma vez e os terminais sincronizarem sozinhos
+  - JavaScript puro no painel e no terminal, para rodar em TVs e dispositivos simples sem instalar app
+  - Três perfis de acesso — administrador, terminal de exibição e usuário — separando quem publica de quem só exibe
+  - Editor com layouts prontos (tela cheia, SplitScreen e faixa de notícias) reaproveitando uma biblioteca de mídias
+  - IA no desenvolvimento para acelerar a entrega, com revisão manual do que vai a produção
 - Resultado: Conteúdo publicado uma vez passa a valer para todos os terminais, no lugar da atualização manual tela por tela.
 
 ### ClubStrategy — Gestão de Turmas (slug: clubstrategy)
@@ -114,9 +117,10 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 - Problema: Controle de alunos matriculados, lista de espera e turmas lotadas sem uma visão única.
 - Solucao: Dashboard com alunos matriculados, lista de espera, turmas lotadas e resumo por modalidade.
 - Decisoes:
-  - Dashboard único que consolida alunos matriculados, lista de espera e turmas lotadas
-  - Resumo por modalidade para leitura rápida da ocupação
-  - Consultas agregadas sobre PostgreSQL/Supabase
+  - Supabase (PostgreSQL) como fonte única de matrículas, lista de espera e turmas, no lugar de planilhas dispersas
+  - Consultas agregadas no banco (por modalidade e status) para o dashboard abrir rápido
+  - Tela única com matriculados, lista de espera e turmas lotadas, dando visão imediata da ocupação
+  - Front-end web em JavaScript puro, acessível de qualquer navegador da secretaria
 - Resultado: Painel único no lugar do controle disperso — visão imediata de matrículas, lista de espera e turmas lotadas.
 
 ### Clubingo — Conferência de Bingo (slug: clubingo)
@@ -130,9 +134,11 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 - Problema: A conferência das cartelas era manual e lenta durante o evento.
 - Solucao: Sistema de bingo com sincronização em tempo real entre o sorteador e os conferentes, instalável no celular (PWA).
 - Decisoes:
-  - Sincronização em tempo real entre sorteador e conferentes (Supabase Realtime)
-  - PWA instalável no celular, sem depender de loja de aplicativos
-  - Papéis separados (sorteador/conferente) com saída protegida por senha
+  - Supabase Realtime para o número sorteado chegar aos conferentes no mesmo instante, sem recarregar a tela
+  - PWA instalável no celular, evitando depender de loja de aplicativos durante o evento
+  - Papéis separados (sorteador e conferente) com saída protegida por senha, para ninguém encerrar a sessão por engano
+  - Layout responsivo que serve tanto na vertical quanto na horizontal do celular do conferente
+  - Build estático na Vercel, mantendo a página leve com a sincronização por conta do Supabase
 - Resultado: A conferência acompanha o sorteio em tempo real, substituindo a checagem manual das cartelas.
 
 ### My Fly — Landing page (slug: myfly)
