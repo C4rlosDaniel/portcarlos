@@ -77,6 +77,11 @@ const projects: Project[] = [
         fr: 'Synchronisation en temps réel entre le tableau de bord et les terminaux',
       },
     ],
+    result: {
+      'pt-BR': 'Conteúdo publicado uma vez passa a valer para todos os terminais, no lugar da atualização manual tela por tela.',
+      en: 'Content published once applies to every terminal, replacing manual screen-by-screen updates.',
+      fr: 'Le contenu publié une fois s\'applique à tous les terminaux, à la place de la mise à jour manuelle écran par écran.',
+    },
     cover: '/projects/clubeon/cover.webp',
     gallery: [
       { src: '/projects/clubeon/gallery-1.webp', thumb: '/projects/clubeon/gallery-1-thumb.webp', caption: p('ClubeON') },
@@ -195,6 +200,28 @@ const projects: Project[] = [
       en: 'Dashboard with enrolled students, waiting list, full classes and a summary by activity.',
       fr: 'Tableau de bord avec élèves inscrits, liste d\'attente, classes pleines et résumé par activité.',
     },
+    decisions: [
+      {
+        'pt-BR': 'Dashboard único que consolida alunos matriculados, lista de espera e turmas lotadas',
+        en: 'A single dashboard consolidating enrolled students, waiting list and full classes',
+        fr: 'Un tableau de bord unique regroupant élèves inscrits, liste d\'attente et classes pleines',
+      },
+      {
+        'pt-BR': 'Resumo por modalidade para leitura rápida da ocupação',
+        en: 'Summary by activity for a quick read of occupancy',
+        fr: 'Résumé par activité pour une lecture rapide de l\'occupation',
+      },
+      {
+        'pt-BR': 'Consultas agregadas sobre PostgreSQL/Supabase',
+        en: 'Aggregated queries on PostgreSQL/Supabase',
+        fr: 'Requêtes agrégées sur PostgreSQL/Supabase',
+      },
+    ],
+    result: {
+      'pt-BR': 'Painel único no lugar do controle disperso — visão imediata de matrículas, lista de espera e turmas lotadas.',
+      en: 'A single panel instead of scattered tracking — immediate view of enrollments, waiting list and full classes.',
+      fr: 'Un panneau unique à la place d\'un suivi épars — vue immédiate des inscriptions, listes d\'attente et classes pleines.',
+    },
     cover: '/projects/clubstrategy/cover.webp',
     gallery: [
       {
@@ -262,6 +289,28 @@ const projects: Project[] = [
         'Sistema de bingo com sincronização em tempo real entre o sorteador e os conferentes, instalável no celular (PWA).',
       en: 'A bingo system with real-time sync between the drawer and the checkers, installable on mobile (PWA).',
       fr: 'Système de bingo avec synchronisation en temps réel entre le tirage et les contrôleurs, installable sur mobile (PWA).',
+    },
+    decisions: [
+      {
+        'pt-BR': 'Sincronização em tempo real entre sorteador e conferentes (Supabase Realtime)',
+        en: 'Real-time sync between drawer and checkers (Supabase Realtime)',
+        fr: 'Synchronisation en temps réel entre le tirage et les contrôleurs (Supabase Realtime)',
+      },
+      {
+        'pt-BR': 'PWA instalável no celular, sem depender de loja de aplicativos',
+        en: 'PWA installable on mobile, without relying on an app store',
+        fr: 'PWA installable sur mobile, sans dépendre d\'un store d\'applications',
+      },
+      {
+        'pt-BR': 'Papéis separados (sorteador/conferente) com saída protegida por senha',
+        en: 'Separate roles (drawer/checker) with a password-protected exit',
+        fr: 'Rôles distincts (tireur/contrôleur) avec sortie protégée par mot de passe',
+      },
+    ],
+    result: {
+      'pt-BR': 'A conferência acompanha o sorteio em tempo real, substituindo a checagem manual das cartelas.',
+      en: 'Checking follows the draw in real time, replacing manual card verification.',
+      fr: 'Le contrôle suit le tirage en temps réel, remplaçant la vérification manuelle des cartes.',
     },
     cover: '/projects/clubingo/cover.webp',
     gallery: [

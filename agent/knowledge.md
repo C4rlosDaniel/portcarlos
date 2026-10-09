@@ -101,7 +101,7 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 - Decisoes:
   - Três perfis de acesso: administrador, terminal de exibição e usuário
   - Sincronização em tempo real entre painel e terminais
-- Resultado: nao informado na base.
+- Resultado: Conteúdo publicado uma vez passa a valer para todos os terminais, no lugar da atualização manual tela por tela.
 
 ### ClubStrategy — Gestão de Turmas (slug: clubstrategy)
 
@@ -113,7 +113,11 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 - Link: https://clubstrategy.clubepirassununga.com.br
 - Problema: Controle de alunos matriculados, lista de espera e turmas lotadas sem uma visão única.
 - Solucao: Dashboard com alunos matriculados, lista de espera, turmas lotadas e resumo por modalidade.
-- Resultado: nao informado na base.
+- Decisoes:
+  - Dashboard único que consolida alunos matriculados, lista de espera e turmas lotadas
+  - Resumo por modalidade para leitura rápida da ocupação
+  - Consultas agregadas sobre PostgreSQL/Supabase
+- Resultado: Painel único no lugar do controle disperso — visão imediata de matrículas, lista de espera e turmas lotadas.
 
 ### Clubingo — Conferência de Bingo (slug: clubingo)
 
@@ -125,7 +129,11 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 - Link: https://clubingo.vercel.app
 - Problema: A conferência das cartelas era manual e lenta durante o evento.
 - Solucao: Sistema de bingo com sincronização em tempo real entre o sorteador e os conferentes, instalável no celular (PWA).
-- Resultado: nao informado na base.
+- Decisoes:
+  - Sincronização em tempo real entre sorteador e conferentes (Supabase Realtime)
+  - PWA instalável no celular, sem depender de loja de aplicativos
+  - Papéis separados (sorteador/conferente) com saída protegida por senha
+- Resultado: A conferência acompanha o sorteio em tempo real, substituindo a checagem manual das cartelas.
 
 ### My Fly — Landing page (slug: myfly)
 
