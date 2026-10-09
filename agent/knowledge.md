@@ -144,6 +144,23 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
   - SEO local (Pirassununga/SP): meta tags, Open Graph e conversão direta para o WhatsApp
 - Resultado: nao informado na base.
 
+### Lume Estamparia — Landing page (slug: lume)
+
+- Resumo: Modelo de landing page para estamparia (marca fictícia) — catálogo com abas, bastidores e orçamento via WhatsApp.
+- Papel: Design e desenvolvimento front-end completo (modelo conceitual)
+- Periodo: 2026
+- Categoria: landing
+- Stack: HTML, CSS, JavaScript, Google Fonts, Vercel
+- Link: https://modelolanding.vercel.app
+- Problema: Empresa fictícia de estamparia precisava de um site que apresentasse produtos, processo de produção e bastidores, e captasse pedidos de orçamento.
+- Solucao: Landing page estática e responsiva com catálogo por abas, galeria de bastidores, depoimentos e formulário que monta a mensagem e abre o WhatsApp — sem backend.
+- Decisoes:
+  - HTML, CSS e JavaScript puros (sem framework) para página leve e sem etapa de build
+  - Abas de catálogo e animações de revelação on scroll em JavaScript vanilla
+  - Formulário estático que gera a mensagem pronta e abre o WhatsApp — nenhum dado armazenado no site
+  - Identidade visual própria: paleta escura com destaque vermelho e tipografia Bebas Neue + PT Sans
+- Resultado: nao informado na base.
+
 ### Projetos ocultos (nao exibidos no site)
 
 - Lab de Automação (n8n) (slug: n8n-lab) — Workflows que construí para estudar e aplicar automação. — stack: n8n, Webhooks, APIs REST
@@ -151,7 +168,7 @@ Fonte oficial de verdade sobre o profissional. Não inventar informações fora 
 ## Habilidades
 
 - **Automação & Workflows** [em estudo]: Automatizo tarefas e integro sistemas com n8n, APIs e webhooks, em fluxos simples e confiáveis. Ferramentas: n8n, Webhooks, APIs REST, integrações; usada em: myfly
-- **Web & Front-end** [em producao]: Construo interfaces web com HTML, CSS e JavaScript — foi assim que os sistemas do Clube Pirassununga saíram do papel. Ferramentas: HTML5, CSS3, JavaScript; usada em: clubeon, clubstrategy, clubingo, myfly
+- **Web & Front-end** [em producao]: Construo interfaces web com HTML, CSS e JavaScript — foi assim que os sistemas do Clube Pirassununga saíram do papel. Ferramentas: HTML5, CSS3, JavaScript; usada em: clubeon, clubstrategy, clubingo, myfly, lume
 - **Dados & Backend** [em producao]: Modelo e consulto dados com PostgreSQL e Supabase, incluindo sincronização em tempo real. Ferramentas: PostgreSQL, Supabase, SQL; usada em: clubeon, clubstrategy, clubingo
 - **IA aplicada ao desenvolvimento** [em producao]: Uso IA no dia a dia para acelerar o desenvolvimento e a automação, revisando o que vai para produção. Ferramentas: Antigravity, OpenCode, engenharia de prompt; usada em: clubeon, clubstrategy, clubingo, myfly
 - **Infraestrutura & Suporte** [em producao]: Instalo, configuro e mantenho equipamentos, redes e estações de trabalho, com atendimento presencial. Ferramentas: Hardware, Redes, Windows, inventário de TI, atendimento em campo

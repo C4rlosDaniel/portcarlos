@@ -375,6 +375,104 @@ const projects: Project[] = [
     gallery: [{ src: '/projects/myfly/gallery-1.webp', thumb: '/projects/myfly/gallery-1-thumb.webp', caption: p('My Fly') }],
   },
   {
+    slug: 'lume',
+    title: { 'pt-BR': 'Lume Estamparia — Landing page', en: 'Lume Estamparia — Landing page', fr: 'Lume Estamparia — Landing page' },
+    tagline: {
+      'pt-BR':
+        'Modelo de landing page para estamparia (marca fictícia) — catálogo com abas, bastidores e orçamento via WhatsApp.',
+      en: 'Landing page model for a print shop (fictional brand) — tabbed catalog, behind-the-scenes gallery and quote requests via WhatsApp.',
+      fr: 'Modèle de landing page pour un atelier d\'impression (marque fictive) — catalogue à onglets, coulisses et devis via WhatsApp.',
+    },
+    category: ['landing'],
+    role: {
+      'pt-BR': 'Design e desenvolvimento front-end completo (modelo conceitual)',
+      en: 'Full front-end design and development (conceptual model)',
+      fr: 'Conception et développement front-end complet (modèle conceptuel)',
+    },
+    period: '2026',
+    liveUrl: 'https://modelolanding.vercel.app',
+    access: 'public',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Google Fonts', 'Vercel'],
+    problem: {
+      'pt-BR':
+        'Empresa fictícia de estamparia precisava de um site que apresentasse produtos, processo de produção e bastidores, e captasse pedidos de orçamento.',
+      en: 'A fictional print shop needed a website presenting its products, production process and behind-the-scenes, while capturing quote requests.',
+      fr: 'Une imprimerie fictive avait besoin d\'un site présentant ses produits, son processus de production et ses coulisses, tout en captant les demandes de devis.',
+    },
+    solution: {
+      'pt-BR':
+        'Landing page estática e responsiva com catálogo por abas, galeria de bastidores, depoimentos e formulário que monta a mensagem e abre o WhatsApp — sem backend.',
+      en: 'Responsive static landing page with a tabbed catalog, behind-the-scenes gallery, testimonials and a form that builds the message and opens WhatsApp — no backend.',
+      fr: 'Landing page statique et responsive avec catalogue à onglets, galerie de coulisses, témoignages et formulaire qui compose le message et ouvre WhatsApp — sans backend.',
+    },
+    decisions: [
+      {
+        'pt-BR': 'HTML, CSS e JavaScript puros (sem framework) para página leve e sem etapa de build',
+        en: 'Plain HTML, CSS and JavaScript (no framework) for a lightweight page with no build step',
+        fr: 'HTML, CSS et JavaScript purs (sans framework) pour une page légère sans étape de build',
+      },
+      {
+        'pt-BR': 'Abas de catálogo e animações de revelação on scroll em JavaScript vanilla',
+        en: 'Tabbed catalog and scroll-reveal animations in vanilla JavaScript',
+        fr: 'Catalogue à onglets et animations de révélation au défilement en JavaScript vanilla',
+      },
+      {
+        'pt-BR':
+          'Formulário estático que gera a mensagem pronta e abre o WhatsApp — nenhum dado armazenado no site',
+        en: 'Static form that builds the message and opens WhatsApp — no data stored on the site',
+        fr: 'Formulaire statique qui compose le message et ouvre WhatsApp — aucune donnée stockée sur le site',
+      },
+      {
+        'pt-BR': 'Identidade visual própria: paleta escura com destaque vermelho e tipografia Bebas Neue + PT Sans',
+        en: 'Custom visual identity: dark palette with red accent and Bebas Neue + PT Sans typography',
+        fr: 'Identité visuelle personnalisée : palette sombre avec accent rouge et typographie Bebas Neue + PT Sans',
+      },
+    ],
+    cover: '/projects/lume/cover.webp',
+    gallery: [
+      {
+        src: '/projects/lume/gallery-1.webp',
+        thumb: '/projects/lume/gallery-1-thumb.webp',
+        caption: { 'pt-BR': 'Hero — Sua arte, nossa estampa', en: 'Hero — Your art, our print', fr: 'Hero — Votre art, notre impression' },
+      },
+      {
+        src: '/projects/lume/gallery-2.webp',
+        thumb: '/projects/lume/gallery-2-thumb.webp',
+        caption: { 'pt-BR': 'Sobre a Lume', en: 'About Lume', fr: 'À propos de Lume' },
+      },
+      {
+        src: '/projects/lume/gallery-3.webp',
+        thumb: '/projects/lume/gallery-3-thumb.webp',
+        caption: { 'pt-BR': 'Diferenciais', en: 'Key features', fr: 'Atouts' },
+      },
+      {
+        src: '/projects/lume/gallery-4.webp',
+        thumb: '/projects/lume/gallery-4-thumb.webp',
+        caption: { 'pt-BR': 'Catálogo de produtos', en: 'Product catalog', fr: 'Catalogue de produits' },
+      },
+      {
+        src: '/projects/lume/gallery-5.webp',
+        thumb: '/projects/lume/gallery-5-thumb.webp',
+        caption: { 'pt-BR': 'Do orçamento à entrega', en: 'From quote to delivery', fr: 'Du devis à la livraison' },
+      },
+      {
+        src: '/projects/lume/gallery-6.webp',
+        thumb: '/projects/lume/gallery-6-thumb.webp',
+        caption: { 'pt-BR': 'Bastidores e depoimentos', en: 'Behind the scenes and testimonials', fr: 'Coulisses et témoignages' },
+      },
+      {
+        src: '/projects/lume/gallery-7.webp',
+        thumb: '/projects/lume/gallery-7-thumb.webp',
+        caption: { 'pt-BR': 'Formulário de orçamento', en: 'Quote form', fr: 'Formulaire de devis' },
+      },
+      {
+        src: '/projects/lume/gallery-8.webp',
+        thumb: '/projects/lume/gallery-8-thumb.webp',
+        caption: { 'pt-BR': 'Contato e mapa', en: 'Contact and map', fr: 'Contact et plan' },
+      },
+    ],
+  },
+  {
     slug: 'n8n-lab',
     title: { 'pt-BR': 'Lab de Automação (n8n)', en: 'Automation Lab (n8n)', fr: 'Lab d\'automatisation (n8n)' },
     tagline: {

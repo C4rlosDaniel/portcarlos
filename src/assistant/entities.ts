@@ -16,6 +16,7 @@ const PROJECT_ALIASES: Record<string, string[]> = {
     'conferencia de bingo', 'bingo checking',
   ],
   myfly: ['myfly', 'my fly', 'landing page', 'landing', 'my fly landing'],
+  lume: ['lume', 'estamparia', 'serigrafia', 'lume estamparia', 'modelolanding'],
 }
 
 const SKILL_ALIASES: Record<string, string[]> = {

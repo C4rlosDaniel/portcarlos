@@ -42,7 +42,7 @@ export const skills: Skill[] = [
       fr: 'Je construis des interfaces web avec HTML, CSS et JavaScript — c\'est ainsi que les systèmes du Clube Pirassununga sont nés.',
     },
     tools: ['HTML5', 'CSS3', 'JavaScript'],
-    usedIn: ['clubeon', 'clubstrategy', 'clubingo', 'myfly'],
+    usedIn: ['clubeon', 'clubstrategy', 'clubingo', 'myfly', 'lume'],
     colors: ['#f472b6', '#a78bfa'],
     size: 3,
     orbitSeconds: 55,

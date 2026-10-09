@@ -226,9 +226,9 @@ export function ask(input: string, siteLang: Lang, state: AssistantState = {}): 
       return { reply: buildIntent(intent.id, lang), lang, state }
     }
     const hint = {
-      'pt-BR': 'Essa pergunta parece ser sobre um projeto — me diga qual (ClubeON, ClubStrategy, Clubingo ou My Fly) ou toque em um dos projetos na página.',
-      en: 'That question seems to be about a project — tell me which one (ClubeON, ClubStrategy, Clubingo or My Fly) or open one from the projects page.',
-      fr: 'Cette question semble porter sur un projet — dites lequel (ClubeON, ClubStrategy, Clubingo ou My Fly) ou ouvrez-en un depuis la page projets.',
+      'pt-BR': 'Essa pergunta parece ser sobre um projeto — me diga qual (ClubeON, ClubStrategy, Clubingo, My Fly ou Lume) ou toque em um dos projetos na página.',
+      en: 'That question seems to be about a project — tell me which one (ClubeON, ClubStrategy, Clubingo, My Fly or Lume) or open one from the projects page.',
+      fr: 'Cette question semble porter sur un projet — dites lequel (ClubeON, ClubStrategy, Clubingo, My Fly ou Lume) ou ouvrez-en un depuis la page projets.',
     } as Localized
     return { reply: { text: hint[lang], chips: projectChipNames(lang) }, lang, state }
   }

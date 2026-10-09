@@ -11,6 +11,7 @@ const targets = [
   { url: 'https://myfly.vercel.app', out: 'public/projects/myfly/cover.png' },
   { url: 'https://clubingo.vercel.app', out: 'public/projects/clubingo/cover.png' },
   { url: 'https://clubstrategy.clubepirassununga.com.br', out: 'public/projects/clubstrategy/cover.png' },
+  { url: 'https://modelolanding.vercel.app', out: 'public/projects/lume/cover.png' },
 ]
 
 const clubeonDir = path.join(root, 'public/projects/clubeon')
