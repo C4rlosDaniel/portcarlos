@@ -130,16 +130,29 @@ const rules: Rule[] = [
     keywords: ['projetos', 'projeto', 'projects', 'project', 'portfolio', 'trabalhos', 'works', 'realizacoes', 'realisations', 'o que ele fez', 'what did he build', 'quoi a-t-il fait'],
     build: (lang) => {
       const tr = t(lang)
-      const names = projectNames(lang).join(', ')
+      const names = (category: 'sistemas' | 'landing') =>
+        visibleProjects
+          .filter((project) => project.category.includes(category))
+          .map((project) => project.title[lang].split(' — ')[0])
+      const conjunction = { 'pt-BR': 'e', en: 'and', fr: 'et' }[lang]
+      const join = (list: string[]) =>
+        list.length > 1
+          ? `${list.slice(0, -1).join(', ')} ${conjunction} ${list[list.length - 1]}`
+          : list.join('')
+      const systems = join(names('sistemas'))
+      const landings = join(names('landing'))
       const text = {
-        'pt-BR': `São ${visibleProjects.length} projetos publicados: ${names}. Cada um tem problema, solução, decisões técnicas e resultado na página de projetos. Quer que eu detalhe algum?`,
-        en: `There are ${visibleProjects.length} published projects: ${names}. Each one has problem, solution, technical decisions and result on the projects page. Want me to detail one?`,
-        fr: `Il y a ${visibleProjects.length} projets publiés : ${names}. Chacun présente le problème, la solution, les décisions techniques et le résultat sur la page projets. Je peux en détailler un ?`,
+        'pt-BR': `São ${visibleProjects.length} projetos publicados. Sistemas: ${systems}. Landing pages: ${landings}. Cada um tem problema, solução, decisões técnicas e resultado na página de projetos. Quer que eu detalhe algum? Também posso te levar até a página de contato.`,
+        en: `There are ${visibleProjects.length} published projects. Systems: ${systems}. Landing pages: ${landings}. Each one has problem, solution, technical decisions and result on the projects page. Want me to detail one? I can also take you to the contact page.`,
+        fr: `Il y a ${visibleProjects.length} projets publiés. Systèmes : ${systems}. Landing pages : ${landings}. Chacun présente le problème, la solution, les décisions techniques et le résultat sur la page projets. Je peux en détailler un ? Je peux aussi vous emmener à la page de contact.`,
       } as Localized
       return {
         text: tr(text),
-        chips: projectNames(lang).slice(0, 3),
-        links: [{ label: 'Ver projetos', to: '/projetos' }],
+        chips: projectNames(lang),
+        links: [
+          { label: { 'pt-BR': 'Ver projetos', en: 'View projects', fr: 'Voir les projets' }[lang], to: '/projetos' },
+          { label: { 'pt-BR': 'Contato', en: 'Contact', fr: 'Contact' }[lang], to: '/contato' },
+        ],
       }
     },
   },
